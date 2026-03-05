@@ -1,17 +1,17 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import PageHero from "@/app/components/static/PageHero";
 
 const howItWorks = [
     { step: "01", icon: "📨", title: "Share Your Invite Link", desc: "Copy your unique referral link and share it with friends via email, WhatsApp, or social media." },
-    { step: "02", icon: "✅", title: "Friend Signs Up", desc: "Your friend creates a WindBnB account using your referral link — takes less than 2 minutes." },
+    { step: "02", icon: "✅", title: "Friend Signs Up", desc: "Your friend creates a WorldBNB account using your referral link — takes less than 2 minutes." },
     { step: "03", icon: "🎉", title: "Both of You Earn", desc: "Your friend gets $30 off their first booking, and you get $30 credit after they complete their stay." },
 ];
 
 export default function InviteFriendsPage() {
     const [copied, setCopied] = useState(false);
-    const referralLink = "https://windbnb.com/invite/USER123";
+    const referralLink = "https://WorldBNB.com/invite/USER123";
 
     const copyLink = () => {
         navigator.clipboard.writeText(referralLink);
@@ -24,7 +24,7 @@ export default function InviteFriendsPage() {
             <PageHero
                 badge="Community"
                 title="Give $30, Get $30"
-                subtitle="Invite your friends to WindBnB. They get $30 off their first stay — you get $30 travel credit when they complete their booking."
+                subtitle="Invite your friends to WorldBNB. They get $30 off their first stay — you get $30 travel credit when they complete their booking."
                 bgImage="/images/hero-community.png"
                 gradient="from-pink-500 to-rose-600"
             />

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import PageHero from "@/app/components/static/PageHero";
@@ -20,8 +20,8 @@ export default function GiftCardsPage() {
         <>
             <PageHero
                 badge="Community"
-                title="WindBnB Gift Cards"
-                subtitle="Give the gift of travel. WindBnB Gift Cards are redeemable for stays at any of our 500,000+ listings worldwide."
+                title="WorldBNB Gift Cards"
+                subtitle="Give the gift of travel. WorldBNB Gift Cards are redeemable for stays at any of our 500,000+ listings worldwide."
                 bgImage="/images/hero-community.png"
                 gradient="from-amber-500 to-orange-500"
             />
@@ -96,7 +96,7 @@ export default function GiftCardsPage() {
                             <div className="bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl p-8 text-white shadow-xl">
                                 <div className="flex items-center gap-2 mb-8">
                                     <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center">🏠</div>
-                                    <span className="font-black text-lg">WindBnB</span>
+                                    <span className="font-black text-lg">WorldBNB</span>
                                 </div>
                                 <div className="text-6xl mb-3">{designs.find(d => d.id === selectedDesign)?.emoji}</div>
                                 <p className="text-white/80 text-sm mb-6">{designs.find(d => d.id === selectedDesign)?.desc}</p>

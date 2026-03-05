@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useMemo } from "react";
 import PageHero from "@/app/components/static/PageHero";
@@ -17,7 +17,7 @@ const openRoles = [
 const perks = [
     { icon: "🌍", title: "Remote First", desc: "Work from anywhere. We have hubs in NYC, London, Singapore, and Berlin." },
     { icon: "🏥", title: "Full Health Coverage", desc: "Medical, dental, and vision for you and your family from day one." },
-    { icon: "✈️", title: "Annual Travel Credit", desc: "$2,500 annual WindBnB travel credit to explore the world." },
+    { icon: "✈️", title: "Annual Travel Credit", desc: "$2,500 annual WorldBNB travel credit to explore the world." },
     { icon: "📚", title: "Learning Budget", desc: "$1,500/year for courses, conferences, and skill development." },
     { icon: "🧘", title: "Wellness Stipend", desc: "$100/month for gym, meditation apps, or any wellness activity." },
     { icon: "🏖️", title: "Unlimited PTO", desc: "We trust our team. Take the time you need to recharge." },
@@ -48,8 +48,8 @@ export default function CareersPage() {
     return (
         <>
             <PageHero
-                badge="WindBnB"
-                title="Work at WindBnB"
+                badge="WorldBNB"
+                title="Work at WorldBNB"
                 subtitle="Join a global team building the future of travel. We're looking for curious, driven people who want to make a real difference."
                 bgImage="/images/hero-company.png"
             />
@@ -60,7 +60,7 @@ export default function CareersPage() {
                     <div className="text-6xl mb-5">🌍</div>
                     <h2 className="text-3xl font-black text-gray-900 mb-4">"We believe travel creates belonging."</h2>
                     <p className="text-gray-500 leading-relaxed max-w-2xl mx-auto">
-                        WindBnB's mission is to create a world where anyone can belong anywhere. Our 1,200+ team members across 30 countries work every day to make that a reality — through technology, community, and care.
+                        WorldBNB's mission is to create a world where anyone can belong anywhere. Our 1,200+ team members across 30 countries work every day to make that a reality — through technology, community, and care.
                     </p>
                     <div className="grid grid-cols-3 gap-6 mt-10">
                         {[{ val: "1,200+", label: "Team Members" }, { val: "30", label: "Countries" }, { val: "4.8/5", label: "Glassdoor Rating" }].map((s) => (

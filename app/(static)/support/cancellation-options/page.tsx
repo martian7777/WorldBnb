@@ -1,4 +1,4 @@
-import PageHero from "@/app/components/static/PageHero";
+﻿import PageHero from "@/app/components/static/PageHero";
 
 const policies = [
     {
@@ -40,9 +40,9 @@ const policies = [
 ];
 
 const faqs = [
-    { q: "Are service fees refunded on cancellation?", a: "For flexible and moderate policies with a full refund, the WindBnB service fee is also refunded. For partial refunds, the service fee is not refunded." },
+    { q: "Are service fees refunded on cancellation?", a: "For flexible and moderate policies with a full refund, the WorldBNB service fee is also refunded. For partial refunds, the service fee is not refunded." },
     { q: "What happens if my host cancels?", a: "If a host cancels a confirmed booking, you'll receive a full refund including service fees. We'll also help you find a comparable property." },
-    { q: "Can I get a refund for extenuating circumstances?", a: "WindBnB's Extenuating Circumstances Policy may apply for situations like natural disasters, serious illness, or government travel restrictions. Documentation is required." },
+    { q: "Can I get a refund for extenuating circumstances?", a: "WorldBNB's Extenuating Circumstances Policy may apply for situations like natural disasters, serious illness, or government travel restrictions. Documentation is required." },
     { q: "How long does a refund take?", a: "Refunds are typically processed within 5–10 business days. Timing depends on your payment method and bank." },
 ];
 
@@ -52,7 +52,7 @@ export default function CancellationOptionsPage() {
             <PageHero
                 badge="Cancellation"
                 title="Cancellation Policies"
-                subtitle="Every listing on WindBnB has a clear cancellation policy set by the host. Know what to expect before you book."
+                subtitle="Every listing on WorldBNB has a clear cancellation policy set by the host. Know what to expect before you book."
                 bgImage="/images/hero-support.png"
                 gradient="from-amber-500 to-orange-600"
             />

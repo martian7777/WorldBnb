@@ -1,21 +1,21 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import PageHero from "@/app/components/static/PageHero";
 
 const pressReleases = [
-    { date: "Mar 1, 2026", category: "Product", title: "WindBnB Launches AI-Powered Smart Matching for Guests and Hosts", excerpt: "New feature uses machine learning to match guests with perfectly suited properties based on travel style, past stays, and host preferences.", tag: "Product Announcement", tagColor: "bg-blue-100 text-blue-700" },
-    { date: "Feb 18, 2026", category: "Expansion", title: "WindBnB Expands into 15 New African Markets", excerpt: "The platform's rapid growth continues as it launches dedicated support and local payment methods across 15 African countries.", tag: "Expansion", tagColor: "bg-green-100 text-green-700" },
-    { date: "Feb 5, 2026", category: "Financial", title: "WindBnB Surpasses 1 Million Active Hosts Worldwide", excerpt: "WindBnB celebrates a major milestone as the platform's host community crosses the 1 million mark, spanning 190 countries.", tag: "Milestone", tagColor: "bg-amber-100 text-amber-700" },
-    { date: "Jan 22, 2026", category: "Expansion", title: "WindBnB Partners with Leading Airlines for Bundled Travel Packages", excerpt: "A new strategic partnership enables guests to book flights and accommodations together, saving up to 30% on combined travel costs.", tag: "Partnership", tagColor: "bg-purple-100 text-purple-700" },
-    { date: "Jan 10, 2026", category: "Financial", title: "2025 Annual Report: Revenue Up 42% YoY, Bookings Hit Record High", excerpt: "WindBnB's 2025 annual report reveals record-breaking performance with $2.8 billion in gross revenue and 80 million total nights booked.", tag: "Financial", tagColor: "bg-rose-100 text-rose-700" },
-    { date: "Dec 14, 2025", category: "Product", title: "WindBnB Named World's #1 Travel Platform by Global Travel Awards", excerpt: "For the second consecutive year, WindBnB has been recognized as the leading travel accommodation platform globally.", tag: "Award", tagColor: "bg-indigo-100 text-indigo-700" },
+    { date: "Mar 1, 2026", category: "Product", title: "WorldBNB Launches AI-Powered Smart Matching for Guests and Hosts", excerpt: "New feature uses machine learning to match guests with perfectly suited properties based on travel style, past stays, and host preferences.", tag: "Product Announcement", tagColor: "bg-blue-100 text-blue-700" },
+    { date: "Feb 18, 2026", category: "Expansion", title: "WorldBNB Expands into 15 New African Markets", excerpt: "The platform's rapid growth continues as it launches dedicated support and local payment methods across 15 African countries.", tag: "Expansion", tagColor: "bg-green-100 text-green-700" },
+    { date: "Feb 5, 2026", category: "Financial", title: "WorldBNB Surpasses 1 Million Active Hosts Worldwide", excerpt: "WorldBNB celebrates a major milestone as the platform's host community crosses the 1 million mark, spanning 190 countries.", tag: "Milestone", tagColor: "bg-amber-100 text-amber-700" },
+    { date: "Jan 22, 2026", category: "Expansion", title: "WorldBNB Partners with Leading Airlines for Bundled Travel Packages", excerpt: "A new strategic partnership enables guests to book flights and accommodations together, saving up to 30% on combined travel costs.", tag: "Partnership", tagColor: "bg-purple-100 text-purple-700" },
+    { date: "Jan 10, 2026", category: "Financial", title: "2025 Annual Report: Revenue Up 42% YoY, Bookings Hit Record High", excerpt: "WorldBNB's 2025 annual report reveals record-breaking performance with $2.8 billion in gross revenue and 80 million total nights booked.", tag: "Financial", tagColor: "bg-rose-100 text-rose-700" },
+    { date: "Dec 14, 2025", category: "Product", title: "WorldBNB Named World's #1 Travel Platform by Global Travel Awards", excerpt: "For the second consecutive year, WorldBNB has been recognized as the leading travel accommodation platform globally.", tag: "Award", tagColor: "bg-indigo-100 text-indigo-700" },
 ];
 
 const mediaContacts = [
-    { region: "Global", email: "press@windbnb.com" },
-    { region: "APAC", email: "press.apac@windbnb.com" },
-    { region: "EMEA", email: "press.emea@windbnb.com" },
+    { region: "Global", email: "press@WorldBNB.com" },
+    { region: "APAC", email: "press.apac@WorldBNB.com" },
+    { region: "EMEA", email: "press.emea@WorldBNB.com" },
 ];
 
 const FILTERS = ["All", "Product", "Expansion", "Financial"] as const;
@@ -31,9 +31,9 @@ export default function NewsroomPage() {
     return (
         <>
             <PageHero
-                badge="WindBnB"
+                badge="WorldBNB"
                 title="Newsroom"
-                subtitle="The latest announcements, partnerships, milestones, and media resources from WindBnB."
+                subtitle="The latest announcements, partnerships, milestones, and media resources from WorldBNB."
                 bgImage="/images/hero-company.png"
             />
 
@@ -93,7 +93,7 @@ export default function NewsroomPage() {
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="bg-white rounded-2xl p-7 border border-gray-200 shadow-sm">
                         <h3 className="font-black text-gray-900 text-xl mb-4">📦 Media Kit</h3>
-                        <p className="text-gray-500 text-sm mb-5">Download official WindBnB logos, brand guidelines, executive headshots, and product screenshots.</p>
+                        <p className="text-gray-500 text-sm mb-5">Download official WorldBNB logos, brand guidelines, executive headshots, and product screenshots.</p>
                         <button className="bg-gray-900 text-white font-bold px-6 py-3 rounded-xl hover:bg-gray-700 transition-all flex items-center gap-2">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
                             Download Media Kit

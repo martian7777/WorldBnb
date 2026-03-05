@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { signIn } from 'next-auth/react';
 import axios from 'axios';
@@ -117,7 +117,7 @@ const LoginModal = () => {
         <div className="
         justify-center flex flex-row items-center gap-2">
            <div>
-            First time using Windbnb?
+            First time using WorldBNB?
            </div>
            <div
             onClick={toggle}

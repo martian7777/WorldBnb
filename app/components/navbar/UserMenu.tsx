@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { AiOutlineMenu } from "react-icons/ai";
 import Avatar from "../Avatar";
@@ -54,7 +54,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 cursor-pointer
                 "
             >
-                Windbnb your home
+                WorldBNB your home
             </div>
             <div 
             onClick={toggleOpen}
@@ -117,7 +117,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                  />
                     <MenuItem
                     onClick={rentModal.onOpen}
-                    label="Windbnb my home"
+                    label="WorldBNB my home"
                  />
                  <hr />
                  <MenuItem

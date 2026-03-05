@@ -1,12 +1,12 @@
-import PageHero from "@/app/components/static/PageHero";
+﻿import PageHero from "@/app/components/static/PageHero";
 
 const events = [
-    { emoji: "🏙️", title: "WindBnB Host Summit — Lisbon 2026", date: "Apr 12–14, 2026", location: "Lisbon, Portugal", type: "In-Person", spots: "234 attending", desc: "Three days of workshops, networking, and masterclasses for WindBnB hosts from around the world.", color: "border-blue-200 bg-blue-50 text-blue-700" },
+    { emoji: "🏙️", title: "WorldBNB Host Summit — Lisbon 2026", date: "Apr 12–14, 2026", location: "Lisbon, Portugal", type: "In-Person", spots: "234 attending", desc: "Three days of workshops, networking, and masterclasses for WorldBNB hosts from around the world.", color: "border-blue-200 bg-blue-50 text-blue-700" },
     { emoji: "💻", title: "Webinar: Maximizing Your Listing Revenue", date: "Mar 20, 2026", location: "Online", type: "Webinar", spots: "1,240 registered", desc: "Learn proven pricing strategies, photography tips, and guest communication best practices from top-rated hosts.", color: "border-emerald-200 bg-emerald-50 text-emerald-700" },
     { emoji: "🌏", title: "Community Meetup — Singapore", date: "Mar 28, 2026", location: "Singapore", type: "Meetup", spots: "89 attending", desc: "Connect with local hosts and guests in an informal evening of food, drinks, and sharing experiences.", color: "border-violet-200 bg-violet-50 text-violet-700" },
     { emoji: "🎨", title: "Listing Photography Workshop", date: "Apr 5, 2026", location: "Online", type: "Workshop", spots: "456 registered", desc: "A hands-on workshop to help hosts take stunning photos that attract more bookings — no professional camera needed.", color: "border-rose-200 bg-rose-50 text-rose-700" },
-    { emoji: "🏡", title: "New Host Orientation — March", date: "Mar 15, 2026", location: "Online", type: "Webinar", spots: "780 registered", desc: "Everything you need to know to launch your first WindBnB listing — live Q&A with experienced hosts included.", color: "border-amber-200 bg-amber-50 text-amber-700" },
-    { emoji: "🤝", title: "Host Community Day — Dubai", date: "May 3, 2026", location: "Dubai, UAE", type: "In-Person", spots: "150 attending", desc: "A full-day event celebrating the WindBnB host community in the Middle East, featuring awards and panel discussions.", color: "border-orange-200 bg-orange-50 text-orange-700" },
+    { emoji: "🏡", title: "New Host Orientation — March", date: "Mar 15, 2026", location: "Online", type: "Webinar", spots: "780 registered", desc: "Everything you need to know to launch your first WorldBNB listing — live Q&A with experienced hosts included.", color: "border-amber-200 bg-amber-50 text-amber-700" },
+    { emoji: "🤝", title: "Host Community Day — Dubai", date: "May 3, 2026", location: "Dubai, UAE", type: "In-Person", spots: "150 attending", desc: "A full-day event celebrating the WorldBNB host community in the Middle East, featuring awards and panel discussions.", color: "border-orange-200 bg-orange-50 text-orange-700" },
 ];
 
 export default function EventsPage() {
@@ -15,7 +15,7 @@ export default function EventsPage() {
             <PageHero
                 badge="Community"
                 title="Events & Experiences"
-                subtitle="Join WindBnB events — from host summits to webinars and local meetups. Connect, learn, and grow with the community."
+                subtitle="Join WorldBNB events — from host summits to webinars and local meetups. Connect, learn, and grow with the community."
                 bgImage="/images/hero-community.png"
                 gradient="from-orange-500 to-rose-500"
             />

@@ -1,4 +1,4 @@
-import PageHero from "@/app/components/static/PageHero";
+﻿import PageHero from "@/app/components/static/PageHero";
 import InfoCard from "@/app/components/static/InfoCard";
 
 const resources = [
@@ -8,7 +8,7 @@ const resources = [
     { icon: "🏡", title: "Setting Up Your Space", desc: "Checklists and design tips for staging your property to wow guests — from bedroom essentials to welcome baskets.", href: "#" },
     { icon: "⭐", title: "Getting 5-Star Reviews", desc: "Actionable advice on guest communication, check-in experience, and the small touches that lead to glowing reviews.", href: "#" },
     { icon: "📋", title: "Legal & Tax Guide", desc: "What every host needs to know about local regulations, short-term rental permits, and reporting rental income.", href: "#" },
-    { icon: "🔒", title: "Safety & Security", desc: "Installing smart locks, best practices for vetting guests, and how to use WindBnB's Host Protection Guarantee.", href: "#" },
+    { icon: "🔒", title: "Safety & Security", desc: "Installing smart locks, best practices for vetting guests, and how to use WorldBNB's Host Protection Guarantee.", href: "#" },
     { icon: "📊", title: "Analytics Dashboard", desc: "How to read your hosting dashboard — views, conversion rate, earnings trends, and how to improve each metric.", href: "#" },
     { icon: "🤝", title: "Working with Co-Hosts", desc: "A guide to finding, hiring, and managing a co-host to help you scale your hosting business.", href: "#" },
 ];
@@ -28,7 +28,7 @@ export default function HostResourcesPage() {
             <PageHero
                 badge="Hosting"
                 title="Host Resources"
-                subtitle="Everything you need to become a confident, successful WindBnB host — guides, checklists, templates, and expert advice."
+                subtitle="Everything you need to become a confident, successful WorldBNB host — guides, checklists, templates, and expert advice."
                 bgImage="/images/hero-hosting.png"
                 gradient="from-teal-500 to-emerald-600"
             />

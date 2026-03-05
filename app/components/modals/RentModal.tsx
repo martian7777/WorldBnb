@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import useRentModal from "@/app/hooks/useRentModal";
 
@@ -270,7 +270,7 @@ const RentModal = () => {
           actionLabel={actionLabel}
           secondaryActionLabel={secondaryActionLabel}
           secondaryAction={step == STEPS.CATEGORY ? undefined : onBack}
-          title="Windbnb your home!"
+          title="WorldBNB your home!"
           body={bodyContent}
         />
       );

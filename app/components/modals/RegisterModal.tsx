@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import axios from 'axios';
 import { AiFillGithub } from 'react-icons/ai';
@@ -62,7 +62,7 @@ const RegisterModal = () => {
       const bodyContent = (
         <div className="flex flex-col gap-4">
           <Heading 
-            title="Welcome to Windbnb"
+            title="Welcome to WorldBNB"
             subtitle="Create an account!"
           />
           <Input 

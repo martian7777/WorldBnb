@@ -1,4 +1,4 @@
-import PageHero from "@/app/components/static/PageHero";
+﻿import PageHero from "@/app/components/static/PageHero";
 import Link from "next/link";
 import InfoCard from "@/app/components/static/InfoCard";
 
@@ -8,7 +8,7 @@ const benefits = [
     { icon: "🤝", title: "Dedicated Host Support", desc: "Access our 24/7 host support line, detailed guides, and a community of experienced hosts to help you succeed." },
     { icon: "📊", title: "Smart Pricing Tools", desc: "Our pricing recommendations use local market data to help you stay competitive and maximize your earnings." },
     { icon: "⭐", title: "Superhost Recognition", desc: "Earn Superhost status for exceptional hospitality — it unlocks greater visibility and exclusive rewards." },
-    { icon: "🌍", title: "Global Guest Network", desc: "Reach travellers from 190+ countries. WindBnB is the world's most trusted platform for unique stays." },
+    { icon: "🌍", title: "Global Guest Network", desc: "Reach travellers from 190+ countries. WorldBNB is the world's most trusted platform for unique stays." },
 ];
 
 const steps = [
@@ -22,7 +22,7 @@ export default function TryHostingPage() {
         <>
             <PageHero
                 badge="Hosting"
-                title="Earn Money Hosting on WindBnB"
+                title="Earn Money Hosting on WorldBNB"
                 subtitle="Turn your spare room, vacation home, or unique space into a source of income. Join 4 million hosts worldwide."
                 bgImage="/images/hero-hosting.png"
                 gradient="from-indigo-600 to-violet-700"
@@ -67,7 +67,7 @@ export default function TryHostingPage() {
             {/* Benefits */}
             <section className="py-16 bg-white">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-black text-gray-900 mb-10 text-center">Why Host with WindBnB?</h2>
+                    <h2 className="text-2xl font-black text-gray-900 mb-10 text-center">Why Host with WorldBNB?</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {benefits.map((b) => <InfoCard key={b.title} {...b} accent="bg-indigo-50 text-indigo-600" />)}
                     </div>

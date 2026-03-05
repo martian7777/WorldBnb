@@ -1,15 +1,15 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import PageHero from "@/app/components/static/PageHero";
 
 const articles = [
     { category: "Travel", tag: "🌏", title: "The 10 Most Underrated Cities to Visit in 2026", excerpt: "Skip the tourist traps — these hidden gems offer authentic culture, affordable stays, and experiences money can't buy.", date: "March 1, 2026", readTime: "6 min read", color: "from-blue-500 to-indigo-600" },
-    { category: "Hosting", tag: "🏡", title: "How Maria Turned Her Spare Room Into $3,000 a Month", excerpt: "A single mom in Lisbon shares how hosting on WindBnB changed her life — and how you can do it too.", date: "Feb 25, 2026", readTime: "4 min read", color: "from-rose-500 to-pink-600" },
-    { category: "Design", tag: "🎨", title: "Airbnb Aesthetic: How to Design a Space Guests Love", excerpt: "Interior design tips from top-rated WindBnB hosts — from lighting tricks to the one plant that makes all the difference.", date: "Feb 20, 2026", readTime: "5 min read", color: "from-amber-500 to-orange-600" },
+    { category: "Hosting", tag: "🏡", title: "How Maria Turned Her Spare Room Into $3,000 a Month", excerpt: "A single mom in Lisbon shares how hosting on WorldBNB changed her life — and how you can do it too.", date: "Feb 25, 2026", readTime: "4 min read", color: "from-rose-500 to-pink-600" },
+    { category: "Design", tag: "🎨", title: "Airbnb Aesthetic: How to Design a Space Guests Love", excerpt: "Interior design tips from top-rated WorldBNB hosts — from lighting tricks to the one plant that makes all the difference.", date: "Feb 20, 2026", readTime: "5 min read", color: "from-amber-500 to-orange-600" },
     { category: "Food", tag: "🍜", title: "Eating Like a Local: Food Markets Across Southeast Asia", excerpt: "From Bangkok's floating markets to Hanoi's street food alleys — your ultimate culinary travel guide.", date: "Feb 15, 2026", readTime: "7 min read", color: "from-emerald-500 to-teal-600" },
-    { category: "Travel", tag: "🌿", title: "How to Travel Sustainably Without Sacrificing Comfort", excerpt: "Eco-conscious travel doesn't mean roughing it. Here's how WindBnB hosts are leading the green travel revolution.", date: "Feb 10, 2026", readTime: "5 min read", color: "from-green-500 to-emerald-600" },
-    { category: "Hosting", tag: "💻", title: "The Best WindBnB Rentals for Digital Nomads in 2026", excerpt: "Fast WiFi, desk space, and stunning views — we ranked the top 15 work-friendly rentals you can book right now.", date: "Feb 5, 2026", readTime: "8 min read", color: "from-violet-500 to-purple-600" },
+    { category: "Travel", tag: "🌿", title: "How to Travel Sustainably Without Sacrificing Comfort", excerpt: "Eco-conscious travel doesn't mean roughing it. Here's how WorldBNB hosts are leading the green travel revolution.", date: "Feb 10, 2026", readTime: "5 min read", color: "from-green-500 to-emerald-600" },
+    { category: "Hosting", tag: "💻", title: "The Best WorldBNB Rentals for Digital Nomads in 2026", excerpt: "Fast WiFi, desk space, and stunning views — we ranked the top 15 work-friendly rentals you can book right now.", date: "Feb 5, 2026", readTime: "8 min read", color: "from-violet-500 to-purple-600" },
 ];
 
 const FILTERS = ["All", "Travel", "Hosting", "Design", "Food"] as const;
@@ -26,8 +26,8 @@ export default function MagazinePage() {
         <>
             <PageHero
                 badge="Community"
-                title="WindBnB Magazine"
-                subtitle="Stories, guides, and inspiration from the WindBnB community — travelers, hosts, and everyone in between."
+                title="WorldBNB Magazine"
+                subtitle="Stories, guides, and inspiration from the WorldBNB community — travelers, hosts, and everyone in between."
                 bgImage="/images/hero-community.png"
             />
 
@@ -37,7 +37,7 @@ export default function MagazinePage() {
                     <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 sm:p-12 text-white flex flex-col lg:flex-row gap-8 items-center">
                         <div className="flex-1">
                             <span className="inline-block bg-violet-500/30 border border-violet-400/30 text-violet-300 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">Featured Story</span>
-                            <h2 className="text-3xl sm:text-4xl font-black mb-4 leading-tight">World's Friendliest Hosts: The 2026 WindBnB Awards</h2>
+                            <h2 className="text-3xl sm:text-4xl font-black mb-4 leading-tight">World's Friendliest Hosts: The 2026 WorldBNB Awards</h2>
                             <p className="text-gray-300 leading-relaxed mb-6">We travelled to 40 countries to find the hosts that go above and beyond — the ones who leave fresh flowers, write city guides, and make guests feel like family.</p>
                             <a href="#" className="inline-flex items-center gap-2 bg-violet-500 hover:bg-violet-600 text-white font-bold px-6 py-3 rounded-xl transition-all">
                                 Read Full Story <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>

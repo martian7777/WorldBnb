@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "WindBnB — Find Your Perfect Stay",
-  description: "Discover unique homes, cabins, villas and experiences around the world with WindBnB.",
+  title: "WorldBNB — Find Your Perfect Stay",
+  description: "Discover unique homes, cabins, villas and experiences around the world with WorldBNB.",
 };
 
 const font = Nunito({

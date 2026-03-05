@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -60,7 +60,7 @@ function HowItWorksSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="text-rose-500 font-bold text-sm uppercase tracking-widest">Simple Process</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2 mb-4">How WindBnB Works</h2>
+          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2 mb-4">How WorldBNB Works</h2>
           <p className="text-gray-500 max-w-xl mx-auto">Three easy steps to your perfect stay — we handle the rest.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -120,7 +120,7 @@ function DestinationsSection() {
   );
 }
 
-/* ─── Why WindBnB ────────────────────────── */
+/* ─── Why WorldBNB ────────────────────────── */
 const features = [
   { icon: "🛡️", title: "Verified Listings", desc: "Every property is reviewed and verified by our team. What you see is exactly what you get." },
   { icon: "🔒", title: "Secure Payments", desc: "Your payment is protected with bank-level encryption. We hold funds until 24h after check-in." },
@@ -138,7 +138,7 @@ function WhySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-14">
           <span className="text-rose-400 font-bold text-sm uppercase tracking-widest">Our Promise</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4">Why Choose WindBnB?</h2>
+          <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4">Why Choose WorldBNB?</h2>
           <p className="text-gray-400 max-w-xl mx-auto">We go beyond booking. We deliver confidence, comfort, and unforgettable experiences.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -213,7 +213,7 @@ function HostCTASection() {
         <div className="max-w-xl">
           <span className="inline-block bg-rose-500/20 border border-rose-500/30 text-rose-300 text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">For Hosts</span>
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-5 leading-tight">Turn Your Space Into<span className="block text-rose-400">Extra Income</span></h2>
-          <p className="text-gray-300 text-lg mb-8 leading-relaxed">Join over 4 million hosts on WindBnB. Set your own schedule, set your price, and welcome guests from around the world — on your terms.</p>
+          <p className="text-gray-300 text-lg mb-8 leading-relaxed">Join over 4 million hosts on WorldBNB. Set your own schedule, set your price, and welcome guests from around the world — on your terms.</p>
           <Link href="/hosting/try-hosting" className="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white font-bold px-8 py-4 rounded-2xl transition-all shadow-xl hover:shadow-rose-500/40 hover:scale-105 text-lg">
             Start Hosting Today
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
@@ -226,7 +226,7 @@ function HostCTASection() {
 
 /* ─── Testimonials ───────────────────────── */
 const testimonials = [
-  { name: "Sophie Laurent", location: "Paris, France", avatar: "SL", rating: 5, text: "Absolutely magical experience in Santorini! The villa exceeded every expectation. WindBnB made the entire booking process seamless.", stay: "Santorini Cliffside Villa", color: "from-violet-500 to-purple-600" },
+  { name: "Sophie Laurent", location: "Paris, France", avatar: "SL", rating: 5, text: "Absolutely magical experience in Santorini! The villa exceeded every expectation. WorldBNB made the entire booking process seamless.", stay: "Santorini Cliffside Villa", color: "from-violet-500 to-purple-600" },
   { name: "James Thornton", location: "London, UK", avatar: "JT", rating: 5, text: "Stayed in a gorgeous ryokan in Kyoto. The host was incredibly welcoming and the property was exactly as described.", stay: "Traditional Kyoto Ryokan", color: "from-rose-500 to-pink-600" },
   { name: "Aisha Rahman", location: "Dubai, UAE", avatar: "AR", rating: 5, text: "The Maldives overwater bungalow was a dream come true. Everything from booking to checkout was perfect.", stay: "Maldives Overwater Bungalow", color: "from-amber-500 to-orange-600" },
 ];
@@ -237,7 +237,7 @@ function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="text-rose-500 font-bold text-sm uppercase tracking-widest">Real Stories</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2 mb-4">Guests Love WindBnB</h2>
+          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2 mb-4">Guests Love WorldBNB</h2>
           <div className="flex items-center justify-center gap-1 mb-2">
             {[...Array(5)].map((_, i) => <span key={i} className="text-amber-400 text-2xl">★</span>)}
           </div>
