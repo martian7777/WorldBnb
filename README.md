@@ -1,36 +1,165 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WorldBNB 🌍
 
-## Getting Started
+> **Find your perfect home away from home.** WorldBNB is a full-stack short-term rental marketplace built with Next.js 14, Prisma, NextAuth, and Tailwind CSS — inspired by Airbnb.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 🏠 **Landing Page** | Animated hero, destination cards, stats, testimonials, and host CTA |
+| 🔍 **Search & Filter** | Filter listings by location, dates, guests, price, and category |
+| 🔐 **Authentication** | Email/password + GitHub + Google OAuth via NextAuth |
+| 📋 **18 Static Pages** | Help Center, Safety, Careers, Investors, Magazine, Events, Gift Cards, Privacy, Terms |
+| 🎛 **User Dashboard** | Post-login hub with bookings, wishlist, notifications, profile, and settings |
+| 🏡 **Host Tools** | Create/manage listings with photos, pricing, availability, and amenities |
+| ⭐ **Reviews** | Guest reviews with star ratings |
+| 🗺️ **Map Search** | Leaflet-based interactive map view |
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|---|---|
+| **Framework** | [Next.js 14](https://nextjs.org) — App Router |
+| **Language** | TypeScript |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com) |
+| **Auth** | [NextAuth.js v4](https://next-auth.js.org) — GitHub, Google, Credentials |
+| **Database** | [MongoDB Atlas](https://mongodb.com/atlas) via [Prisma ORM](https://prisma.io) |
+| **Image CDN** | [Cloudinary](https://cloudinary.com) |
+| **Maps** | [Leaflet](https://leafletjs.com) + `react-leaflet` |
+| **Deployment** | [Vercel](https://vercel.com) |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 18 · npm ≥ 9 · MongoDB Atlas cluster · GitHub & Google OAuth apps · Cloudinary account
+
+### 1. Clone & install
+
+```bash
+git clone https://github.com/your-username/my-windbnb.git
+cd my-windbnb
+npm install
+```
+
+### 2. Environment variables
+
+Create a `.env` file in the project root:
+
+```env
+DATABASE_URL="mongodb+srv://<user>:<password>@<cluster>.mongodb.net/worldbnb"
+
+NEXTAUTH_SECRET="your-secret-here"
+NEXTAUTH_URL="http://localhost:3000"
+
+GITHUB_ID="your-github-client-id"
+GITHUB_SECRET="your-github-client-secret"
+
+GOOGLE_CLIENT_ID="your-google-client-id"
+GOOGLE_CLIENT_SECRET="your-google-client-secret"
+
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your-cloud-name"
+```
+
+### 3. Database setup
+
+```bash
+npx prisma generate
+npx prisma db push
+```
+
+### 4. Run dev server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# → http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+my-windbnb/
+├── app/
+│   ├── (auth)/                 # Login & Signup pages
+│   │   ├── layout.tsx
+│   │   ├── login/page.tsx
+│   │   └── signup/page.tsx
+│   ├── (dashboard)/            # Post-login user dashboard
+│   │   ├── layout.tsx          # Sidebar + topbar shell
+│   │   ├── dashboard/page.tsx  # Overview + stats
+│   │   ├── bookings/page.tsx
+│   │   ├── wishlist/page.tsx
+│   │   ├── notifications/page.tsx
+│   │   ├── profile/page.tsx
+│   │   └── settings/page.tsx
+│   ├── (static)/               # 18 static/legal pages
+│   │   ├── layout.tsx
+│   │   ├── support/  community/  hosting/  windbnb/
+│   │   ├── privacy/  terms/
+│   ├── home/                   # Main listings app
+│   ├── components/
+│   │   ├── auth/               # AuthCard, SocialButton
+│   │   ├── dashboard/          # Sidebar, Header, StatCard
+│   │   ├── landing/            # LandingHeader, LandingFooter
+│   │   └── static/             # PageHero, FAQAccordion, InfoCard, ContactForm
+│   ├── context/
+│   │   └── AuthContext.tsx     # Auth state management
+│   ├── actions/                # Server actions
+│   └── api/                    # NextAuth API routes
+├── prisma/schema.prisma
+├── public/images/
+└── README.md
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🗺️ All Routes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Route | Description |
+|---|---|
+| `/` | Landing page |
+| `/login` | Sign in |
+| `/signup` | Create account |
+| `/home` | Browse listings |
+| `/dashboard` | Dashboard overview |
+| `/bookings` | My bookings |
+| `/wishlist` | Saved listings |
+| `/notifications` | Notifications |
+| `/profile` | Edit profile |
+| `/settings` | Account settings |
+| `/support/*` | 4 support pages |
+| `/community/*` | 4 community pages |
+| `/hosting/*` | 4 hosting pages |
+| `/windbnb/*` | 4 company pages |
+| `/privacy` | Privacy Policy |
+| `/terms` | Terms & Conditions |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔐 Authentication
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Three providers via **NextAuth.js**: Email/Password · GitHub OAuth · Google OAuth
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Sessions stored in MongoDB via Prisma adapter.
+
+---
+
+## 📦 Deploy to Vercel
+
+1. Push to GitHub → Import at [vercel.com/new](https://vercel.com/new)
+2. Add all `.env` variables in Vercel project settings
+3. Deploy 🚀
+
+---
+
+## 📄 License
+
+MIT — built with ❤️ by the WorldBNB team.
