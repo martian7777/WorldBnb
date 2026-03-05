@@ -1,1 +1,89 @@
-浩潰瑲倠条䡥牥⁯牦浯∠⽀灡⽰潣灭湯湥獴猯慴楴⽣慐敧效潲㬢਍浩潰瑲䰠湩⁫牦浯∠敮瑸氯湩≫഻椊灭牯⁴湉潦慃摲映潲⁭䀢愯灰振浯潰敮瑮⽳瑳瑡捩䤯普䍯牡≤഻ഊ挊湯瑳戠湥晥瑩⁳‽൛ †笠椠潣㩮∠㼿Ⱒ琠瑩敬›䔢牡⁮湯夠畯⁲捓敨畤敬Ⱒ搠獥㩣∠潈瑳映牯愠眠敥敫摮‬⁡敳獡湯‬牯映汵⵬楴敭霠礠畯爧⁥湩挠浯汰瑥⁥潣瑮潲⁬景礠畯⁲慣敬摮牡愠摮愠慶汩扡汩瑩⹹•ⱽ਍††⁻捩湯›㼢㼿Ⱒ琠瑩敬›䠢獯⁴牐瑯捥楴湯䜠慵慲瑮敥Ⱒ搠獥㩣∠灕琠⁯ㄤ⁍湩瀠潲数瑲⁹慤慭敧瀠潲整瑣潩⁮湡⁤楬扡汩瑩⁹湩畳慲据⁥湩汣摵摥眠瑩⁨癥牥⁹潢歯湩⁧瑡渠⁯潣瑳琠⁯潹⹵•ⱽ਍††⁻捩湯›㼢∿‬楴汴㩥∠敄楤慣整⁤潈瑳匠灵潰瑲Ⱒ搠獥㩣∠捁散獳漠牵㈠⼴‷潨瑳猠灵潰瑲氠湩ⱥ搠瑥楡敬⁤畧摩獥‬湡⁤⁡潣浭湵瑩⁹景攠灸牥敩据摥栠獯獴琠⁯敨灬礠畯猠捵散摥∮素ബ †笠椠潣㩮∠㼿Ⱒ琠瑩敬›匢慭瑲倠楲楣杮吠潯獬Ⱒ搠獥㩣∠畏⁲牰捩湩⁧敲潣浭湥慤楴湯⁳獵⁥潬慣⁬慭歲瑥搠瑡⁡潴栠汥⁰潹⁵瑳祡挠浯数楴楴敶愠摮洠硡浩穩⁥潹牵攠牡楮杮⹳•ⱽ਍††⁻捩湯›㼢Ⱒ琠瑩敬›匢灵牥潨瑳删捥杯楮楴湯Ⱒ搠獥㩣∠慅湲匠灵牥潨瑳猠慴畴⁳潦⁲硥散瑰潩慮⁬潨灳瑩污瑩⁹ₗ瑩甠汮捯獫朠敲瑡牥瘠獩扩汩瑩⁹湡⁤硥汣獵癩⁥敲慷摲⹳•ⱽ਍††⁻捩湯›㼢∿‬楴汴㩥∠汇扯污䜠敵瑳丠瑥潷歲Ⱒ搠獥㩣∠敒捡⁨牴癡汥敬獲映潲⁭㤱⬰挠畯瑮楲獥‮潗汲䉤䉎椠⁳桴⁥潷汲❤⁳潭瑳琠畲瑳摥瀠慬晴牯⁭潦⁲湵煩敵猠慴獹∮素ബ崊഻ഊ挊湯瑳猠整獰㴠嬠਍††⁻瑳灥›〢∱‬捩湯›㼢∿‬楴汴㩥∠牃慥整夠畯⁲楌瑳湩≧‬敤捳›吢汥⁬獵愠潢瑵礠畯⁲灳捡⁥ₗ摡⁤桰瑯獯‬敳⁴潹牵栠畯敳爠汵獥‬湡⁤档潯敳礠畯⁲浡湥瑩敩⹳吠歡獥愠潢瑵ㄠ‰業畮整⹳•ⱽ਍††⁻瑳灥›〢∲‬捩湯›㼢∿‬楴汴㩥∠敓⁴潙牵倠楲散Ⱒ搠獥㩣∠潙⁵敤楣敤眠慨⁴潴挠慨杲⹥唠敳漠牵猠慭瑲瀠楲楣杮琠潯⁬牯猠瑥礠畯⁲睯⁮楮桧汴⁹慲整⁳潦⁲湡⁹慤整爠湡敧∮素ബ †笠猠整㩰∠㌰Ⱒ椠潣㩮∠∿‬楴汴㩥∠敗捬浯⁥畇獥獴Ⱒ搠獥㩣∠捁散瑰戠潯楫杮爠煥敵瑳ⱳ挠浯畭楮慣整眠瑩⁨畧獥獴‬湡⁤桳牡⁥潹牵氠捯污欠潮汷摥敧映牯愠⁮湵潦杲瑥慴汢⁥瑳祡∮素ബ崊഻ഊ攊灸牯⁴敤慦汵⁴畦据楴湯吠祲潈瑳湩偧条⡥ ൻ †爠瑥牵⁮ന †††㰠ാ †††††㰠慐敧效潲਍††††††††慢杤㵥䠢獯楴杮ഢ †††††††琠瑩敬∽慅湲䴠湯祥䠠獯楴杮漠⁮潗汲䉤䉎ഢ †††††††猠扵楴汴㵥吢牵⁮潹牵猠慰敲爠潯Ɑ瘠捡瑡潩⁮潨敭‬牯甠楮畱⁥灳捡⁥湩潴愠猠畯捲⁥景椠据浯⹥䨠楯⁮‴業汬潩⁮潨瑳⁳潷汲睤摩⹥ഢ †††††††戠䥧慭敧∽椯慭敧⽳敨潲栭獯楴杮瀮杮ഢ †††††††朠慲楤湥㵴昢潲⵭湩楤潧㘭〰琠ⵯ楶汯瑥㜭〰ഢ †††††⼠ാഊ †††††笠⨯䔠牡楮杮⁳效潲⨠累਍††††††猼捥楴湯挠慬獳慎敭∽祰ㄭ‶杢眭楨整㸢਍††††††††搼癩挠慬獳慎敭∽慭⵸⵷砵⁬硭愭瑵⁯硰㐭猠㩭硰㘭氠㩧硰㠭㸢਍††††††††††搼癩挠慬獳慎敭∽杢札慲楤湥⵴潴戭⁲牦浯椭摮杩ⵯ〹‰潴瘭潩敬⵴〹‰潲湵敤ⵤ砳⁬⵰‸浳瀺ㄭ′整瑸眭楨整琠硥⵴散瑮牥㸢਍††††††††††††格′汣獡乳浡㵥琢硥⵴砲⁬潦瑮戭汯⁤整瑸椭摮杩ⵯ〲‰扭㈭㸢潈瑳⁳湩礠畯⁲牡慥攠牡⁮湡愠敶慲敧漠㱦栯㸲਍††††††††††††搼癩挠慬獳慎敭∽整瑸㘭汸猠㩭整瑸㜭汸映湯⵴汢捡⁫祭㐭㸢ㄤ㈬〰猼慰⁮汣獡乳浡㵥琢硥⵴砳⁬整瑸椭摮杩ⵯ〳∰⼾潭⼼灳湡㰾搯癩ാ †††††††††††㰠⁰汣獡乳浡㵥琢硥⵴湩楤潧㈭〰洠ⵢ‸慭⵸⵷摭洠⵸畡潴㸢慂敳⁤湯猠浩汩牡氠獩楴杮⁳湩礠畯⁲敲楧湯‮潙牵愠瑣慵⁬慥湲湩獧搠灥湥⁤湯礠畯⁲潬慣楴湯‬灳捡⁥祴数‬湡⁤癡楡慬楢楬祴㰮瀯ാ †††††††††††㰠楤⁶汣獡乳浡㵥朢楲⁤牧摩挭汯⵳″慧⵰‶潢摲牥琭戠牯敤⵲桷瑩⽥〱瀠⵴∸ാ †††††††††††††笠筛氠扡汥›䄢杶‮楎桧汴⁹慒整Ⱒ瘠污敵›␢㠹•ⱽ笠氠扡汥›䄢杶‮捏畣慰据≹‬慶畬㩥∠㌷∥素‬⁻慬敢㩬∠癁⹧删瑡湩≧‬慶畬㩥∠⸴㜸∿素⹝慭⡰猨 㸽⠠਍††††††††††††††††搼癩欠祥笽⹳慬敢絬ാ †††††††††††††††††㰠楤⁶汣獡乳浡㵥琢硥⵴砲⁬潦瑮戭慬正㸢獻瘮污敵㱽搯癩ാ †††††††††††††††††㰠楤⁶汣獡乳浡㵥琢硥⵴湩楤潧㌭〰琠硥⵴獸洠⵴∱笾⹳慬敢絬⼼楤㹶਍††††††††††††††††⼼楤㹶਍††††††††††††††⤩ൽ †††††††††††㰠搯癩ാ †††††††††㰠搯癩ാ †††††††㰠搯癩ാ †††††㰠猯捥楴湯ാഊ †††††笠⨯䠠睯琠⁯瑓牡⁴⼪ൽ †††††㰠敳瑣潩⁮汣獡乳浡㵥瀢⵹㘱戠ⵧ牧祡㔭∰ാ †††††††㰠楤⁶汣獡乳浡㵥洢硡眭㔭汸洠⵸畡潴瀠⵸‴浳瀺⵸‶杬瀺⵸∸ാ †††††††††㰠㉨挠慬獳慎敭∽整瑸㈭汸映湯⵴汢捡⁫整瑸札慲⵹〹‰扭ㄭ‰整瑸挭湥整≲䜾瑥楴杮匠慴瑲摥䤠⁳楓灭敬⼼㉨ാ †††††††††㰠楤⁶汣獡乳浡㵥朢楲⁤牧摩挭汯⵳‱摭机楲ⵤ潣獬㌭朠灡㠭㸢਍††††††††††††獻整獰洮灡⠨⥳㴠‾ന †††††††††††††㰠楤⁶敫㵹獻献整絰挠慬獳慎敭∽杢眭楨整爠畯摮摥㈭汸瀠㜭猠慨潤⵷浳戠牯敤⁲潢摲牥札慲⵹〱‰潨敶㩲桳摡睯氭⁧牴湡楳楴湯愭汬琠硥⵴散瑮牥㸢਍††††††††††††††††搼癩挠慬獳慎敭∽整瑸㐭汸洠ⵢ∴笾⹳捩湯㱽搯癩ാ †††††††††††††††㰠楤⁶汣獡乳浡㵥琢硥⵴獸映湯⵴潢摬琠硥⵴湩楤潧㘭〰甠灰牥慣敳琠慲正湩ⵧ楷敤瑳洠ⵢ∲匾整⁰獻献整絰⼼楤㹶਍††††††††††††††††格″汣獡乳浡㵥昢湯⵴汢捡⁫整瑸札慲⵹〹‰整瑸氭⁧扭㈭㸢獻琮瑩敬㱽栯㸳਍††††††††††††††††瀼挠慬獳慎敭∽整瑸札慲⵹〵‰整瑸猭⁭敬摡湩ⵧ敲慬數≤笾⹳敤捳㱽瀯ാ †††††††††††††㰠搯癩ാ †††††††††††⤠紩਍††††††††††⼼楤㹶਍††††††††⼼楤㹶਍††††††⼼敳瑣潩㹮਍਍††††††⽻‪敂敮楦獴⨠累਍††††††猼捥楴湯挠慬獳慎敭∽祰ㄭ‶杢眭楨整㸢਍††††††††搼癩挠慬獳慎敭∽慭⵸⵷砶⁬硭愭瑵⁯硰㐭猠㩭硰㘭氠㩧硰㠭㸢਍††††††††††格′汣獡乳浡㵥琢硥⵴砲⁬潦瑮戭慬正琠硥⵴牧祡㤭〰洠ⵢ〱琠硥⵴散瑮牥㸢桗⁹潈瑳眠瑩⁨潗汲䉤䉎㰿栯㸲਍††††††††††搼癩挠慬獳慎敭∽牧摩朠楲ⵤ潣獬ㄭ猠㩭牧摩挭汯⵳′杬机楲ⵤ潣獬㌭朠灡㘭㸢਍††††††††††††扻湥晥瑩⹳慭⡰戨 㸽㰠湉潦慃摲欠祥笽⹢楴汴絥笠⸮戮⁽捡散瑮∽杢椭摮杩ⵯ〵琠硥⵴湩楤潧㘭〰•㸯紩਍††††††††††⼼楤㹶਍††††††††⼼楤㹶਍††††††⼼敳瑣潩㹮਍਍††††††⽻‪呃⁁⼪ൽ †††††㰠敳瑣潩⁮汣獡乳浡㵥瀢⵹〲戠ⵧ牧摡敩瑮琭ⵯ牢映潲⵭湩楤潧㘭〰琠ⵯ楶汯瑥㜭〰琠硥⵴散瑮牥㸢਍††††††††搼癩挠慬獳慎敭∽慭⵸⵷汸洠⵸畡潴瀠⵸∴ാ †††††††††㰠㉨挠慬獳慎敭∽整瑸㌭汸映湯⵴汢捡⁫整瑸眭楨整洠ⵢ∴刾慥祤琠⁯瑓牡⁴潈瑳湩㽧⼼㉨ാ †††††††††㰠⁰汣獡乳浡㵥琢硥⵴湩楤潧㈭〰洠ⵢ∸䌾敲瑡⁥潹牵氠獩楴杮椠⁮業畮整⁳湡⁤瑳牡⁴慥湲湩⁧潴慤⹹⼼㹰਍††††††††††䰼湩⁫牨晥∽∯挠慬獳慎敭∽湩楬敮戭潬正戠ⵧ桷瑩⁥整瑸椭摮杩ⵯ〷‰潦瑮戭慬正瀠⵸〱瀠⵹‴潲湵敤ⵤ砲⁬潨敶㩲桳摡睯㈭汸栠癯牥猺慣敬ㄭ㔰琠慲獮瑩潩⵮污⁬整瑸氭≧ാ †††††††††††䌠敲瑡⁥潙牵䰠獩楴杮㼠਍††††††††††⼼楌歮ാ †††††††㰠搯癩ാ †††††㰠猯捥楴湯ാ †††㰠㸯਍††㬩਍ൽ
+import PageHero from "@/app/components/static/PageHero";
+import Link from "next/link";
+import InfoCard from "@/app/components/static/InfoCard";
+
+const benefits = [
+  { icon: "📅", title: "Earn on Your Schedule", desc: "Host for a weekend, a season, or full-time. You're in complete control of your calendar and availability." },
+  { icon: "🛡️", title: "Host Protection Guarantee", desc: "Up to $1M in property damage protection and liability insurance included with every booking at no cost to you." },
+  { icon: "💬", title: "Dedicated Host Support", desc: "Access our 24/7 host support line, detailed guides, and a community of experienced hosts to help you succeed." },
+  { icon: "💡", title: "Smart Pricing Tools", desc: "Our pricing recommendations use local market data to help you stay competitive and maximize your earnings." },
+  { icon: "⭐", title: "Superhost Recognition", desc: "Earn Superhost status for exceptional hospitality—it unlocks greater visibility and exclusive rewards." },
+  { icon: "🌍", title: "Global Guest Network", desc: "Reach travelers from 190+ countries. WorldBnB is the world's most trusted platform for unique stays." }
+];
+
+const steps = [
+  { step: "01", icon: "🏠", title: "Create Your Listing", desc: "Tell us about your space—add photos, set your house rules, and choose your amenities. Takes about 10 minutes." },
+  { step: "02", icon: "💵", title: "Set Your Price", desc: "You decide what to charge. Use our smart pricing tool or set your own nightly rates for any date range." },
+  { step: "03", icon: "👋", title: "Welcome Guests", desc: "Accept booking requests, communicate with guests, and share your local knowledge for an unforgettable stay." }
+];
+
+export default function TryHostingPage() {
+  return (
+    <>
+      <PageHero
+        badge="Hosting"
+        title="Earn Money Hosting on WorldBnB"
+        subtitle="Turn your spare room, vacation home, or unique space into a source of income. Join 4 million hosts worldwide."
+        bgImage="/images/hero-hosting.png"
+        gradient="from-indigo-600 to-violet-700"
+      />
+
+      {/* Earnings Hero */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-indigo-900 to-violet-900 rounded-3xl p-8 sm:p-12 text-white text-center">
+            <h2 className="text-2xl font-bold text-indigo-200 mb-2">Hosts in your area earn an average of</h2>
+            <div className="text-6xl sm:text-7xl font-black my-4">$2,000<span className="text-3xl text-indigo-300">/mo</span></div>
+            <p className="text-indigo-200 mb-8 max-w-md mx-auto">Based on similar listings in your region. Your actual earnings depend on your location, space type, and availability.</p>
+            <div className="grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
+              {[{ label: "Avg. Nightly Rate", value: "$98" }, { label: "Avg. Occupancy", value: "73%" }, { label: "Avg. Rating", value: "4.87" }].map((s) => (
+                <div key={s.label}>
+                  <div className="text-3xl font-black">{s.value}</div>
+                  <div className="text-indigo-300 text-sm mt-1">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How to Start */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-black text-gray-900 mb-10 text-center">Getting Started Is Simple</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {steps.map((s) => (
+              <div key={s.step} className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 hover:shadow-lg transition-all text-center">
+                <div className="text-4xl mb-5">{s.icon}</div>
+                <div className="text-sm font-bold text-indigo-600 uppercase tracking-widest mb-2">Step {s.step}</div>
+                <h3 className="font-black text-gray-900 text-lg mb-2">{s.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-black text-gray-900 mb-10 text-center">Why Host with WorldBnB?</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {benefits.map((b) => <InfoCard key={b.title} {...b} accent="bg-indigo-50 text-indigo-600" />)}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 bg-gradient-to-br from-indigo-600 to-violet-700 text-center">
+        <div className="max-w-xl mx-auto px-5">
+          <h2 className="text-3xl font-black text-white mb-5">Ready to Start Hosting?</h2>
+          <p className="text-indigo-200 mb-8">Create your listing in minutes and start earning today.</p>
+          <Link href="/" className="inline-block bg-white text-indigo-700 font-black px-10 py-4 rounded-xl hover:shadow-2xl hover:scale-105 transition-all text-lg">
+            Create Your Listing
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}
