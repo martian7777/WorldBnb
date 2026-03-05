@@ -60,14 +60,14 @@ export default function LandingHeader() {
                     {/* CTA Buttons */}
                     <div className="hidden md:flex items-center gap-3">
                         <Link
-                            href="/"
+                            href="/login"
                             className={`text-sm font-semibold px-4 py-2 rounded-full transition-all ${scrolled ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
                                 }`}
                         >
                             Log in
                         </Link>
                         <Link
-                            href="/"
+                            href="/signup"
                             className="text-sm font-bold px-5 py-2.5 rounded-full bg-rose-500 text-white hover:bg-rose-600 transition-all shadow-lg hover:shadow-rose-500/30 hover:scale-105"
                         >
                             Sign up
@@ -109,10 +109,10 @@ export default function LandingHeader() {
                             </Link>
                         ))}
                         <div className="flex gap-3 pt-2">
-                            <Link href="/" className="flex-1 text-center py-2.5 rounded-full border border-gray-300 text-gray-700 font-semibold text-sm hover:bg-gray-50">
+                            <Link href="/login" className="flex-1 text-center py-2.5 rounded-full border border-gray-300 text-gray-700 font-semibold text-sm hover:bg-gray-50">
                                 Log in
                             </Link>
-                            <Link href="/" className="flex-1 text-center py-2.5 rounded-full bg-rose-500 text-white font-bold text-sm hover:bg-rose-600">
+                            <Link href="/signup" className="flex-1 text-center py-2.5 rounded-full bg-rose-500 text-white font-bold text-sm hover:bg-rose-600">
                                 Sign up
                             </Link>
                         </div>
