@@ -1,20 +1,20 @@
-﻿import PageHero from "@/app/components/static/PageHero";
+import PageHero from "@/app/components/static/PageHero";
 import Link from "next/link";
 import InfoCard from "@/app/components/static/InfoCard";
 
 const benefits = [
-    { icon: "💸", title: "Earn on Your Schedule", desc: "Host for a weekend, a season, or full-time — you're in complete control of your calendar and availability." },
-    { icon: "🛡️", title: "Host Protection Guarantee", desc: "Up to $1M in property damage protection and liability insurance included with every booking at no cost to you." },
-    { icon: "🤝", title: "Dedicated Host Support", desc: "Access our 24/7 host support line, detailed guides, and a community of experienced hosts to help you succeed." },
-    { icon: "📊", title: "Smart Pricing Tools", desc: "Our pricing recommendations use local market data to help you stay competitive and maximize your earnings." },
-    { icon: "⭐", title: "Superhost Recognition", desc: "Earn Superhost status for exceptional hospitality — it unlocks greater visibility and exclusive rewards." },
-    { icon: "🌍", title: "Global Guest Network", desc: "Reach travellers from 190+ countries. WorldBNB is the world's most trusted platform for unique stays." },
+    { icon: "??", title: "Earn on Your Schedule", desc: "Host for a weekend, a season, or full-time � you're in complete control of your calendar and availability." },
+    { icon: "???", title: "Host Protection Guarantee", desc: "Up to $1M in property damage protection and liability insurance included with every booking at no cost to you." },
+    { icon: "??", title: "Dedicated Host Support", desc: "Access our 24/7 host support line, detailed guides, and a community of experienced hosts to help you succeed." },
+    { icon: "??", title: "Smart Pricing Tools", desc: "Our pricing recommendations use local market data to help you stay competitive and maximize your earnings." },
+    { icon: "?", title: "Superhost Recognition", desc: "Earn Superhost status for exceptional hospitality � it unlocks greater visibility and exclusive rewards." },
+    { icon: "??", title: "Global Guest Network", desc: "Reach travellers from 190+ countries. WorldBNB is the world's most trusted platform for unique stays." },
 ];
 
 const steps = [
-    { step: "01", icon: "📋", title: "Create Your Listing", desc: "Tell us about your space — add photos, set your house rules, and choose your amenities. Takes about 10 minutes." },
-    { step: "02", icon: "💰", title: "Set Your Price", desc: "You decide what to charge. Use our smart pricing tool or set your own nightly rates for any date range." },
-    { step: "03", icon: "✅", title: "Welcome Guests", desc: "Accept booking requests, communicate with guests, and share your local knowledge for an unforgettable stay." },
+    { step: "01", icon: "??", title: "Create Your Listing", desc: "Tell us about your space � add photos, set your house rules, and choose your amenities. Takes about 10 minutes." },
+    { step: "02", icon: "??", title: "Set Your Price", desc: "You decide what to charge. Use our smart pricing tool or set your own nightly rates for any date range." },
+    { step: "03", icon: "?", title: "Welcome Guests", desc: "Accept booking requests, communicate with guests, and share your local knowledge for an unforgettable stay." },
 ];
 
 export default function TryHostingPage() {
@@ -36,7 +36,7 @@ export default function TryHostingPage() {
                         <div className="text-6xl sm:text-7xl font-black my-4">$1,200<span className="text-3xl text-indigo-300">/mo</span></div>
                         <p className="text-indigo-200 mb-8 max-w-md mx-auto">Based on similar listings in your region. Your actual earnings depend on your location, space type, and availability.</p>
                         <div className="grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
-                            {[{ label: "Avg. Nightly Rate", value: "$98" }, { label: "Avg. Occupancy", value: "73%" }, { label: "Avg. Rating", value: "4.87★" }].map((s) => (
+                            {[{ label: "Avg. Nightly Rate", value: "$98" }, { label: "Avg. Occupancy", value: "73%" }, { label: "Avg. Rating", value: "4.87?" }].map((s) => (
                                 <div key={s.label}>
                                     <div className="text-2xl font-black">{s.value}</div>
                                     <div className="text-indigo-300 text-xs mt-1">{s.label}</div>
@@ -79,8 +79,8 @@ export default function TryHostingPage() {
                 <div className="max-w-xl mx-auto px-4">
                     <h2 className="text-3xl font-black text-white mb-4">Ready to Start Hosting?</h2>
                     <p className="text-indigo-200 mb-8">Create your listing in minutes and start earning today.</p>
-                    <Link href="/home" className="inline-block bg-white text-indigo-700 font-black px-10 py-4 rounded-2xl hover:shadow-2xl hover:scale-105 transition-all text-lg">
-                        Create Your Listing →
+                    <Link href="/" className="inline-block bg-white text-indigo-700 font-black px-10 py-4 rounded-2xl hover:shadow-2xl hover:scale-105 transition-all text-lg">
+                        Create Your Listing ?
                     </Link>
                 </div>
             </section>

@@ -97,13 +97,13 @@ function DestinationsSection() {
             <span className="text-rose-500 font-bold text-sm uppercase tracking-widest">Explore</span>
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2">Top Destinations</h2>
           </div>
-          <Link href="/home" className="text-rose-500 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+          <Link href="/" className="text-rose-500 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
             View all <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
           </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {destinations.map((d) => (
-            <Link href="/home" key={d.name} className="relative rounded-2xl overflow-hidden group">
+            <Link href="/" key={d.name} className="relative rounded-2xl overflow-hidden group">
               <div className="relative h-56">
                 <Image src={d.img} alt={d.name} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
@@ -171,13 +171,13 @@ function ListingsShowcase() {
             <span className="text-rose-500 font-bold text-sm uppercase tracking-widest">Trending Now</span>
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2">Guests Are Loving These</h2>
           </div>
-          <Link href="/home" className="text-rose-500 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+          <Link href="/" className="text-rose-500 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
             Browse all listings <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {sampleListings.map((l) => (
-            <Link href="/home" key={l.title} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+            <Link href="/" key={l.title} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
               <div className="relative h-56">
                 <Image src={l.img} alt={l.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1 text-sm font-bold text-gray-800">★ {l.rating}</div>
@@ -300,7 +300,7 @@ function HeroSection() {
             <svg className="w-5 h-5 text-rose-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
             <div className="text-left"><div className="text-xs text-gray-500 font-semibold uppercase tracking-wide">Who</div><div className="text-sm text-gray-400">Add guests</div></div>
           </div>
-          <Link href="/home" className="flex items-center justify-center gap-2 bg-rose-500 hover:bg-rose-600 text-white font-bold rounded-xl px-6 py-3 transition-all hover:shadow-lg shrink-0">
+          <Link href="/" className="flex items-center justify-center gap-2 bg-rose-500 hover:bg-rose-600 text-white font-bold rounded-xl px-6 py-3 transition-all hover:shadow-lg shrink-0">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
             Search
           </Link>

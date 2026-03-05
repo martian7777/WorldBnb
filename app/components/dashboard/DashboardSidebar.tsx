@@ -61,8 +61,8 @@ export default function DashboardSidebar() {
                             key={item.href}
                             href={item.href}
                             className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-semibold transition-all group relative ${isActive
-                                    ? "bg-rose-500 text-white shadow-md shadow-rose-200"
-                                    : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                                ? "bg-rose-500 text-white shadow-md shadow-rose-200"
+                                : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
                                 }`}
                         >
                             <span className="text-base">{item.icon}</span>
@@ -80,7 +80,7 @@ export default function DashboardSidebar() {
             {/* Bottom actions */}
             <div className="px-3 py-4 border-t border-gray-100 space-y-1">
                 <Link
-                    href="/home"
+                    href="/"
                     className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-semibold text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-all"
                 >
                     <span className="text-base">🔍</span>

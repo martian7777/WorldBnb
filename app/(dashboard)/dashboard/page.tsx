@@ -36,7 +36,7 @@ export default function DashboardPage() {
                     You have <strong>2 upcoming trips</strong> and <strong>3 unread notifications</strong>. What would you like to do today?
                 </p>
                 <div className="flex flex-wrap gap-3 mt-6">
-                    <Link href="/home" className="bg-white text-rose-500 font-bold text-sm px-5 py-2.5 rounded-xl hover:shadow-lg transition-all">
+                    <Link href="/" className="bg-white text-rose-500 font-bold text-sm px-5 py-2.5 rounded-xl hover:shadow-lg transition-all">
                         🔍 Browse Stays
                     </Link>
                     <Link href="/bookings" className="bg-white/20 text-white font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-white/30 transition-all border border-white/30">
