@@ -6,25 +6,18 @@ const footerLinks = {
         { label: "Help Center", href: "/support/help-center" },
         { label: "Safety Info", href: "/support/safety-info" },
         { label: "Cancellation Options", href: "/support/cancellation-options" },
-        { label: "Report a Concern", href: "/support/report-concern" },
     ],
     Community: [
-        { label: "Rentora Magazine", href: "/community/magazine" },
-        { label: "Events", href: "/community/events" },
         { label: "Invite Friends", href: "/community/invite-friends" },
         { label: "Gift Cards", href: "/community/gift-cards" },
     ],
     Hosting: [
         { label: "Try Hosting", href: "/hosting/try-hosting" },
         { label: "Host Resources", href: "/hosting/host-resources" },
-        { label: "Host Community", href: "/hosting/host-community" },
-        { label: "Responsible Hosting", href: "/hosting/responsible-hosting" },
     ],
     Rentora: [
         { label: "Newsroom", href: "/rentora/newsroom" },
         { label: "Features", href: "/rentora/features" },
-        { label: "Careers", href: "/rentora/careers" },
-        { label: "Investors", href: "/rentora/investors" },
     ],
 };
 
