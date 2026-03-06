@@ -41,7 +41,7 @@ export default function NewsroomPage() {
             <section className="py-16 bg-white">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
-                        <h2 className="text-2xl font-black text-gray-900">
+                        <h2 className="text-2xl font-black text-slate-900">
                             Press Releases <span className="text-gray-400 font-normal text-lg">({filtered.length})</span>
                         </h2>
                         <div className="flex gap-2 flex-wrap">
@@ -50,7 +50,7 @@ export default function NewsroomPage() {
                                     key={f}
                                     onClick={() => setActiveFilter(f)}
                                     className={`text-xs font-bold px-3 py-1.5 rounded-full transition-all ${activeFilter === f
-                                            ? "bg-gray-900 text-white shadow-md"
+                                            ? "bg-[#1E3A8A] text-white shadow-md"
                                             : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                                         }`}
                                 >
@@ -67,16 +67,16 @@ export default function NewsroomPage() {
                             {filtered.map((p) => (
                                 <article key={p.title} className="bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all cursor-pointer group">
                                     <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-                                        <div className="shrink-0 text-center bg-gray-50 rounded-xl p-3 min-w-[80px]">
+                                        <div className="shrink-0 text-center bg-slate-50 rounded-xl p-3 min-w-[80px]">
                                             <div className="text-xs text-gray-400 font-semibold">{p.date.split(" ")[0].toUpperCase()}</div>
-                                            <div className="text-2xl font-black text-gray-900">{p.date.split(" ")[1].replace(",", "")}</div>
+                                            <div className="text-2xl font-black text-slate-900">{p.date.split(" ")[1].replace(",", "")}</div>
                                             <div className="text-xs text-gray-400">{p.date.split(" ")[2]}</div>
                                         </div>
                                         <div className="flex-1">
                                             <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-2 ${p.tagColor}`}>{p.tag}</span>
-                                            <h3 className="font-black text-gray-900 text-lg mb-2 group-hover:text-gray-700 transition-colors leading-snug">{p.title}</h3>
+                                            <h3 className="font-black text-slate-900 text-lg mb-2 group-hover:text-slate-700 transition-colors leading-snug">{p.title}</h3>
                                             <p className="text-gray-500 text-sm leading-relaxed">{p.excerpt}</p>
-                                            <span className="inline-flex items-center gap-1 text-rose-500 font-semibold text-sm mt-3 group-hover:gap-2 transition-all">
+                                            <span className="inline-flex items-center gap-1 text-[#FF6B4A] font-semibold text-sm mt-3 group-hover:gap-2 transition-all">
                                                 Read More <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                                             </span>
                                         </div>
@@ -89,23 +89,23 @@ export default function NewsroomPage() {
             </section>
 
             {/* Media Kit & Contacts */}
-            <section className="py-14 bg-gray-50">
+            <section className="py-14 bg-slate-50">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="bg-white rounded-2xl p-7 border border-gray-200 shadow-sm">
-                        <h3 className="font-black text-gray-900 text-xl mb-4">📦 Media Kit</h3>
+                        <h3 className="font-black text-slate-900 text-xl mb-4">📦 Media Kit</h3>
                         <p className="text-gray-500 text-sm mb-5">Download official Rentora logos, brand guidelines, executive headshots, and product screenshots.</p>
-                        <button className="bg-gray-900 text-white font-bold px-6 py-3 rounded-xl hover:bg-gray-700 transition-all flex items-center gap-2">
+                        <button className="bg-[#1E3A8A] text-white font-bold px-6 py-3 rounded-xl hover:bg-gray-700 transition-all flex items-center gap-2">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
                             Download Media Kit
                         </button>
                     </div>
                     <div className="bg-white rounded-2xl p-7 border border-gray-200 shadow-sm">
-                        <h3 className="font-black text-gray-900 text-xl mb-4">📧 Press Contacts</h3>
+                        <h3 className="font-black text-slate-900 text-xl mb-4">📧 Press Contacts</h3>
                         <ul className="space-y-3">
                             {mediaContacts.map((c) => (
                                 <li key={c.region} className="flex items-center justify-between text-sm">
                                     <span className="text-gray-600 font-semibold">{c.region}</span>
-                                    <a href={`mailto:${c.email}`} className="text-rose-500 hover:underline">{c.email}</a>
+                                    <a href={`mailto:${c.email}`} className="text-[#FF6B4A] hover:underline">{c.email}</a>
                                 </li>
                             ))}
                         </ul>

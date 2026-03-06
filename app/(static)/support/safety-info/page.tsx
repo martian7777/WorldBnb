@@ -46,7 +46,7 @@ export default function SafetyInfoPage() {
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-10">
                         <span className="text-emerald-600 font-bold text-sm uppercase tracking-widest">For Guests</span>
-                        <h2 className="text-2xl font-black text-gray-900 mt-1">Safety Tips for Travelers</h2>
+                        <h2 className="text-2xl font-black text-slate-900 mt-1">Safety Tips for Travelers</h2>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {safetyTips.map((tip) => (
@@ -57,11 +57,11 @@ export default function SafetyInfoPage() {
             </section>
 
             {/* Host Safety */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-16 bg-slate-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-10">
                         <span className="text-indigo-600 font-bold text-sm uppercase tracking-widest">For Hosts</span>
-                        <h2 className="text-2xl font-black text-gray-900 mt-1">Keeping Your Property Safe</h2>
+                        <h2 className="text-2xl font-black text-slate-900 mt-1">Keeping Your Property Safe</h2>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                         {hostSafety.map((item) => (

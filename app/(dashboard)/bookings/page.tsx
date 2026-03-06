@@ -35,8 +35,8 @@ export default function BookingsPage() {
                         key={f}
                         onClick={() => setFilter(f)}
                         className={`text-sm font-bold px-4 py-2 rounded-full transition-all ${filter === f
-                                ? "bg-rose-500 text-white shadow-md"
-                                : "bg-white border border-gray-200 text-gray-600 hover:border-rose-300"
+                                ? "bg-[#FF6B4A] text-white shadow-md"
+                                : "bg-white border border-gray-200 text-gray-600 hover:border-[#FFAA99]"
                             }`}
                     >
                         {f} {f !== "All" && `(${allBookings.filter(b => b.status === f.toLowerCase()).length})`}
@@ -55,10 +55,10 @@ export default function BookingsPage() {
                     {filtered.map((b) => (
                         <div key={b.id} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all">
                             <div className="flex flex-col sm:flex-row sm:items-center gap-5">
-                                <div className="w-16 h-16 rounded-2xl bg-rose-50 flex items-center justify-center text-4xl shrink-0">{b.image}</div>
+                                <div className="w-16 h-16 rounded-2xl bg-[#FFF0ED] flex items-center justify-center text-4xl shrink-0">{b.image}</div>
                                 <div className="flex-1 min-w-0">
                                     <div className="flex flex-wrap items-center gap-2 mb-1">
-                                        <h3 className="font-black text-gray-900">{b.destination}</h3>
+                                        <h3 className="font-black text-slate-900">{b.destination}</h3>
                                         <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full capitalize ${STATUS_STYLES[b.status]}`}>{b.status}</span>
                                     </div>
                                     <p className="text-sm text-gray-500 mb-1">{b.property}</p>
@@ -66,10 +66,10 @@ export default function BookingsPage() {
                                     <p className="text-xs text-gray-400 font-mono mt-0.5">#{b.confirmation}</p>
                                 </div>
                                 <div className="shrink-0 text-right">
-                                    <div className="text-xl font-black text-gray-900">{b.price}</div>
+                                    <div className="text-xl font-black text-slate-900">{b.price}</div>
                                     <div className="text-xs text-gray-400">{b.nights} nights</div>
                                     {b.status === "upcoming" && (
-                                        <button className="mt-2 text-xs font-bold text-rose-500 hover:text-rose-700 border border-rose-200 hover:border-rose-400 px-3 py-1 rounded-lg transition-all">
+                                        <button className="mt-2 text-xs font-bold text-[#FF6B4A] hover:text-rose-700 border border-rose-200 hover:border-[#FF8A70] px-3 py-1 rounded-lg transition-all">
                                             Manage
                                         </button>
                                     )}

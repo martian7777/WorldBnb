@@ -20,9 +20,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     // Show loading skeleton while checking auth
     if (isLoading || !user) {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-gray-50">
+            <div className="min-h-screen flex items-center justify-center bg-slate-50">
                 <div className="text-center">
-                    <div className="w-10 h-10 border-4 border-rose-200 border-t-rose-500 rounded-full animate-spin mx-auto mb-3" />
+                    <div className="w-10 h-10 border-4 border-rose-200 border-t-[#FF6B4A] rounded-full animate-spin mx-auto mb-3" />
                     <p className="text-sm text-gray-500 font-medium">Loading your dashboard…</p>
                 </div>
             </div>
@@ -30,7 +30,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     }
 
     return (
-        <div className="min-h-screen bg-gray-50 flex">
+        <div className="min-h-screen bg-slate-50 flex">
             {/* Sidebar — hidden on mobile, sticky on desktop */}
             <div className="hidden lg:flex lg:flex-col lg:w-64 lg:fixed lg:inset-y-0 lg:z-40">
                 <DashboardSidebar />

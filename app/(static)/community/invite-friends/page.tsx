@@ -26,25 +26,25 @@ export default function InviteFriendsPage() {
                 title="Give $30, Get $30"
                 subtitle="Invite your friends to Rentora. They get $30 off their first stay — you get $30 travel credit when they complete their booking."
                 bgImage="/images/hero-community.png"
-                gradient="from-pink-500 to-rose-600"
+                gradient="from-[#14B8A6] to-[#E55A3D]"
             />
 
             {/* Main Referral Card */}
             <section className="py-16 bg-white">
                 <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="bg-gradient-to-br from-rose-50 to-pink-50 border-2 border-rose-100 rounded-3xl p-8 text-center">
+                    <div className="bg-gradient-to-br from-[#FFF0ED] to-pink-50 border-2 border-rose-100 rounded-3xl p-8 text-center">
                         <div className="text-7xl mb-5">🎁</div>
-                        <h2 className="text-3xl font-black text-gray-900 mb-3">Your Referral Link</h2>
+                        <h2 className="text-3xl font-black text-slate-900 mb-3">Your Referral Link</h2>
                         <p className="text-gray-500 mb-6 text-sm">Share this link with friends to start earning travel credits.</p>
                         <div className="flex gap-2 bg-white rounded-xl border border-gray-200 p-2 shadow-sm mb-6">
                             <input
                                 readOnly
                                 value={referralLink}
-                                className="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none font-mono"
+                                className="flex-1 px-4 py-2.5 text-sm text-slate-700 bg-transparent outline-none font-mono"
                             />
                             <button
                                 onClick={copyLink}
-                                className={`px-6 py-2.5 rounded-lg font-bold text-sm transition-all shrink-0 ${copied ? "bg-green-500 text-white" : "bg-rose-500 hover:bg-rose-600 text-white"
+                                className={`px-6 py-2.5 rounded-lg font-bold text-sm transition-all shrink-0 ${copied ? "bg-green-500 text-white" : "bg-[#FF6B4A] hover:bg-[#E55A3D] text-white"
                                     }`}
                             >
                                 {copied ? "✓ Copied!" : "Copy"}
@@ -69,15 +69,15 @@ export default function InviteFriendsPage() {
             </section>
 
             {/* How It Works */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-16 bg-slate-50">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-black text-gray-900 mb-10 text-center">How It Works</h2>
+                    <h2 className="text-2xl font-black text-slate-900 mb-10 text-center">How It Works</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {howItWorks.map((s) => (
                             <div key={s.step} className="bg-white rounded-2xl p-7 text-center shadow-sm border border-gray-100 hover:shadow-lg transition-all">
                                 <div className="text-4xl mb-4">{s.icon}</div>
-                                <div className="text-xs font-bold text-rose-500 uppercase tracking-widest mb-2">Step {s.step}</div>
-                                <h3 className="font-black text-gray-900 text-lg mb-2">{s.title}</h3>
+                                <div className="text-xs font-bold text-[#FF6B4A] uppercase tracking-widest mb-2">Step {s.step}</div>
+                                <h3 className="font-black text-slate-900 text-lg mb-2">{s.title}</h3>
                                 <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
                             </div>
                         ))}

@@ -49,9 +49,9 @@ export default function HelpCenterPage() {
             </section>
 
             {/* Categories */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-16 bg-slate-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-black text-gray-900 mb-8 text-center">Browse by Topic</h2>
+                    <h2 className="text-2xl font-black text-slate-900 mb-8 text-center">Browse by Topic</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {categories.map((c) => (
                             <InfoCard key={c.title} {...c} accent="bg-blue-50 text-blue-600" />
@@ -63,7 +63,7 @@ export default function HelpCenterPage() {
             {/* FAQ */}
             <section id="faq" className="py-16 bg-white">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-black text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
+                    <h2 className="text-2xl font-black text-slate-900 mb-8 text-center">Frequently Asked Questions</h2>
                     <FAQAccordion items={faqs} />
                 </div>
             </section>

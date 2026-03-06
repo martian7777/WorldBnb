@@ -38,9 +38,9 @@ export default function HostResourcesPage() {
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
                         {guides.map((g) => (
-                            <button key={g.category} className="bg-gray-50 hover:bg-teal-50 hover:border-teal-200 border-2 border-transparent rounded-2xl p-4 text-center transition-all group">
+                            <button key={g.category} className="bg-slate-50 hover:bg-teal-50 hover:border-teal-200 border-2 border-transparent rounded-2xl p-4 text-center transition-all group">
                                 <div className="text-3xl mb-2">{g.emoji}</div>
-                                <div className="font-bold text-gray-900 text-xs group-hover:text-teal-700">{g.category}</div>
+                                <div className="font-bold text-slate-900 text-xs group-hover:text-teal-700">{g.category}</div>
                                 <div className="text-gray-400 text-xs mt-0.5">{g.count}</div>
                             </button>
                         ))}
@@ -49,10 +49,10 @@ export default function HostResourcesPage() {
             </section>
 
             {/* Resource Cards */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-16 bg-slate-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between mb-8">
-                        <h2 className="text-2xl font-black text-gray-900">Popular Resources</h2>
+                        <h2 className="text-2xl font-black text-slate-900">Popular Resources</h2>
                         <span className="text-sm text-gray-500">52 guides total</span>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -64,7 +64,7 @@ export default function HostResourcesPage() {
             {/* Quick Downloads */}
             <section className="py-14 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-xl font-black text-gray-900 mb-6 text-center">Free Downloads</h2>
+                    <h2 className="text-xl font-black text-slate-900 mb-6 text-center">Free Downloads</h2>
                     <div className="space-y-3">
                         {[
                             { name: "Host Onboarding Checklist", type: "PDF", size: "245 KB" },
@@ -72,11 +72,11 @@ export default function HostResourcesPage() {
                             { name: "Guest Communication Scripts", type: "PDF", size: "312 KB" },
                             { name: "Pricing Calculator Spreadsheet", type: "XLSX", size: "156 KB" },
                         ].map((d) => (
-                            <div key={d.name} className="flex items-center justify-between bg-gray-50 rounded-xl px-5 py-4 hover:bg-teal-50 border border-gray-100 hover:border-teal-200 transition-all group">
+                            <div key={d.name} className="flex items-center justify-between bg-slate-50 rounded-xl px-5 py-4 hover:bg-teal-50 border border-gray-100 hover:border-teal-200 transition-all group">
                                 <div className="flex items-center gap-3">
                                     <span className="text-2xl">📄</span>
                                     <div>
-                                        <div className="font-semibold text-gray-900 text-sm group-hover:text-teal-700">{d.name}</div>
+                                        <div className="font-semibold text-slate-900 text-sm group-hover:text-teal-700">{d.name}</div>
                                         <div className="text-gray-400 text-xs">{d.type} · {d.size}</div>
                                     </div>
                                 </div>

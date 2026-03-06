@@ -60,21 +60,21 @@ export default function CancellationOptionsPage() {
             {/* Policy Cards */}
             <section className="py-16 bg-white">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-black text-gray-900 mb-10 text-center">Policy Types at a Glance</h2>
+                    <h2 className="text-2xl font-black text-slate-900 mb-10 text-center">Policy Types at a Glance</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
                         {policies.map((p) => (
                             <div key={p.name} className={`bg-white rounded-2xl border-2 ${p.color} p-7 shadow-sm hover:shadow-lg transition-all`}>
                                 <div className="flex items-center justify-between mb-5">
                                     <div className="flex items-center gap-2">
                                         <span className="text-2xl">{p.icon}</span>
-                                        <h3 className="text-xl font-black text-gray-900">{p.name}</h3>
+                                        <h3 className="text-xl font-black text-slate-900">{p.name}</h3>
                                     </div>
                                     <span className={`text-xs font-bold px-3 py-1 rounded-full ${p.badge}`}>{p.badgeLabel}</span>
                                 </div>
                                 <ul className="space-y-4">
                                     {p.rules.map((r) => (
                                         <li key={r.label} className="border-t border-gray-100 pt-4">
-                                            <div className="font-bold text-gray-900 text-sm mb-1">{r.label}</div>
+                                            <div className="font-bold text-slate-900 text-sm mb-1">{r.label}</div>
                                             <div className="text-gray-500 text-xs leading-relaxed">{r.detail}</div>
                                         </li>
                                     ))}
@@ -86,13 +86,13 @@ export default function CancellationOptionsPage() {
             </section>
 
             {/* Comparison Table */}
-            <section className="py-12 bg-gray-50">
+            <section className="py-12 bg-slate-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-xl font-black text-gray-900 mb-6 text-center">Quick Comparison</h2>
+                    <h2 className="text-xl font-black text-slate-900 mb-6 text-center">Quick Comparison</h2>
                     <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
                         <table className="w-full text-sm">
                             <thead>
-                                <tr className="bg-gray-900 text-white">
+                                <tr className="bg-[#1E3A8A] text-white">
                                     <th className="px-6 py-4 text-left font-bold">Scenario</th>
                                     <th className="px-4 py-4 text-center font-bold">Flexible</th>
                                     <th className="px-4 py-4 text-center font-bold">Moderate</th>
@@ -107,8 +107,8 @@ export default function CancellationOptionsPage() {
                                     ["Cancel day of check-in", "❌ None", "❌ None", "❌ None"],
                                     ["Host cancels", "✅ Full", "✅ Full", "✅ Full"],
                                 ].map(([scenario, flex, mod, strict]) => (
-                                    <tr key={scenario} className="hover:bg-gray-50 transition-colors">
-                                        <td className="px-6 py-4 font-medium text-gray-900">{scenario}</td>
+                                    <tr key={scenario} className="hover:bg-slate-50 transition-colors">
+                                        <td className="px-6 py-4 font-medium text-slate-900">{scenario}</td>
                                         <td className="px-4 py-4 text-center text-gray-600">{flex}</td>
                                         <td className="px-4 py-4 text-center text-gray-600">{mod}</td>
                                         <td className="px-4 py-4 text-center text-gray-600">{strict}</td>
@@ -124,11 +124,11 @@ export default function CancellationOptionsPage() {
             {/* FAQ */}
             <section className="py-16 bg-white">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-black text-gray-900 mb-8 text-center">Common Questions</h2>
+                    <h2 className="text-2xl font-black text-slate-900 mb-8 text-center">Common Questions</h2>
                     <div className="divide-y divide-gray-200 border border-gray-200 rounded-2xl overflow-hidden">
                         {faqs.map((item) => (
                             <div key={item.q} className="bg-white px-6 py-5">
-                                <p className="font-semibold text-gray-900 mb-2">{item.q}</p>
+                                <p className="font-semibold text-slate-900 mb-2">{item.q}</p>
                                 <p className="text-gray-500 text-sm leading-relaxed">{item.a}</p>
                             </div>
                         ))}

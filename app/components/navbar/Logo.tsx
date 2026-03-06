@@ -8,7 +8,7 @@ const Logo = () => {
     return (
         <div
             onClick={() => router.push('/')}
-            className="hidden md:block cursor-pointer font-bold text-rose-500 text-2xl"
+            className="hidden md:block cursor-pointer font-bold text-[#FF6B4A] text-2xl"
         >
             Rentora
         </div>

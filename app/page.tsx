@@ -23,7 +23,7 @@ function StatsSection() {
           {stats.map((s) => (
             <div key={s.label} className="text-center hover:-translate-y-1 transition-transform duration-300">
               <div className="text-3xl mb-2">{s.icon}</div>
-              <div className="text-3xl sm:text-4xl font-black text-gray-900 mb-1">{s.number}</div>
+              <div className="text-3xl sm:text-4xl font-black text-slate-900 mb-1">{s.number}</div>
               <div className="text-sm text-gray-500 font-medium">{s.label}</div>
             </div>
           ))}
@@ -45,7 +45,7 @@ const steps = [
     step: "02", title: "Book Instantly",
     desc: "Reserve your dream stay with one click. Secure payments, transparent pricing — no hidden fees, ever.",
     icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
-    color: "from-rose-500 to-pink-600",
+    color: "from-[#FF6B4A] to-[#14B8A6]",
   },
   {
     step: "03", title: "Enjoy & Explore",
@@ -57,11 +57,11 @@ const steps = [
 
 function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="py-20 bg-gray-50">
+    <section id="how-it-works" className="py-20 bg-slate-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-rose-500 font-bold text-sm uppercase tracking-widest">Simple Process</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2 mb-4">How Rentora Works</h2>
+          <span className="text-[#FF6B4A] font-bold text-sm uppercase tracking-widest">Simple Process</span>
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4">How Rentora Works</h2>
           <p className="text-gray-500 max-w-xl mx-auto">Three easy steps to your perfect stay — we handle the rest.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -69,7 +69,7 @@ function HowItWorksSection() {
             <div key={s.step} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden group">
               <div className="absolute top-4 right-4 text-6xl font-black text-gray-100 group-hover:text-gray-200 select-none">{s.step}</div>
               <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${s.color} text-white flex items-center justify-center mb-6 shadow-lg`}>{s.icon}</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{s.title}</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">{s.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
             </div>
           ))}
@@ -95,10 +95,10 @@ function DestinationsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12 gap-4">
           <div>
-            <span className="text-rose-500 font-bold text-sm uppercase tracking-widest">Explore</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2">Top Destinations</h2>
+            <span className="text-[#FF6B4A] font-bold text-sm uppercase tracking-widest">Explore</span>
+            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Top Destinations</h2>
           </div>
-          <Link href="/" className="text-rose-500 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+          <Link href="/" className="text-[#FF6B4A] font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
             View all <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
           </Link>
         </div>
@@ -133,12 +133,12 @@ const features = [
 
 function WhySection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-72 h-72 bg-rose-600/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-pink-600/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+    <section className="py-20 bg-gradient-to-br from-gray-900 via-[#1E40AF] to-[#1E3A8A] relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-72 h-72 bg-[#E55A3D]/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#14B8A6]/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-14">
-          <span className="text-rose-400 font-bold text-sm uppercase tracking-widest">Our Promise</span>
+          <span className="text-[#FF8A70] font-bold text-sm uppercase tracking-widest">Our Promise</span>
           <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4">Why Choose Rentora?</h2>
           <p className="text-gray-400 max-w-xl mx-auto">We go beyond booking. We deliver confidence, comfort, and unforgettable experiences.</p>
         </div>
@@ -146,11 +146,11 @@ function WhySection() {
           {features.map((f, i) => {
             const IconGroup = f.icon;
             return (
-              <div key={f.title} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-7 hover:bg-white/10 hover:border-rose-500/50 hover:shadow-[0_0_30px_rgba(244,63,94,0.15)] transition-all duration-300 group hover:-translate-y-2 hover:scale-[1.02]">
-                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-5 group-hover:bg-rose-500/20 transition-colors">
-                  <IconGroup className="w-7 h-7 text-gray-400 group-hover:text-rose-400 transition-colors" />
+              <div key={f.title} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-7 hover:bg-white/10 hover:border-[#FF6B4A]/50 hover:shadow-[0_0_30px_rgba(244,63,94,0.15)] transition-all duration-300 group hover:-translate-y-2 hover:scale-[1.02]">
+                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-5 group-hover:bg-[#FF6B4A]/20 transition-colors">
+                  <IconGroup className="w-7 h-7 text-gray-400 group-hover:text-[#FF8A70] transition-colors" />
                 </div>
-                <h3 className="text-white font-bold text-lg mb-2 group-hover:text-rose-300 transition-colors">{f.title}</h3>
+                <h3 className="text-white font-bold text-lg mb-2 group-hover:text-[#FFAA99] transition-colors">{f.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{f.desc}</p>
               </div>
             );
@@ -170,14 +170,14 @@ const sampleListings = [
 
 function ListingsShowcase() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12 gap-4">
           <div>
-            <span className="text-rose-500 font-bold text-sm uppercase tracking-widest">Trending Now</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2">Guests Are Loving These</h2>
+            <span className="text-[#FF6B4A] font-bold text-sm uppercase tracking-widest">Trending Now</span>
+            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Guests Are Loving These</h2>
           </div>
-          <Link href="/" className="text-rose-500 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+          <Link href="/" className="text-[#FF6B4A] font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
             Browse all listings <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
           </Link>
         </div>
@@ -186,16 +186,16 @@ function ListingsShowcase() {
             <Link href="/" key={l.title} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
               <div className="relative h-56">
                 <Image src={l.img} alt={l.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1 text-sm font-bold text-gray-800">★ {l.rating}</div>
+                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1 text-sm font-bold text-slate-800">★ {l.rating}</div>
               </div>
               <div className="p-5">
                 <div className="flex flex-wrap gap-1 mb-3">
-                  {l.tags.map((t) => <span key={t} className="text-xs bg-rose-50 text-rose-600 font-medium px-2.5 py-0.5 rounded-full">{t}</span>)}
+                  {l.tags.map((t) => <span key={t} className="text-xs bg-[#FFF0ED] text-[#E55A3D] font-medium px-2.5 py-0.5 rounded-full">{t}</span>)}
                 </div>
-                <h3 className="font-bold text-gray-900 text-lg mb-1 group-hover:text-rose-500 transition-colors">{l.title}</h3>
+                <h3 className="font-bold text-slate-900 text-lg mb-1 group-hover:text-[#FF6B4A] transition-colors">{l.title}</h3>
                 <p className="text-gray-500 text-sm mb-4">{l.location}</p>
                 <div className="flex items-center justify-between border-t pt-4">
-                  <div><span className="text-xl font-black text-gray-900">${l.price}</span><span className="text-gray-400 text-sm"> / night</span></div>
+                  <div><span className="text-xl font-black text-slate-900">${l.price}</span><span className="text-gray-400 text-sm"> / night</span></div>
                   <span className="text-gray-400 text-xs">{l.reviews} reviews</span>
                 </div>
               </div>
@@ -213,14 +213,14 @@ function HostCTASection() {
     <section id="become-a-host" className="relative py-28 overflow-hidden">
       <div className="absolute inset-0">
         <Image src="/images/host-cta.png" alt="Become a host" fill className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/75 to-gray-900/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/75 to-[#1E3A8A]/30" />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-xl">
-          <span className="inline-block bg-rose-500/20 border border-rose-500/30 text-rose-300 text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">For Hosts</span>
-          <h2 className="text-4xl sm:text-5xl font-black text-white mb-5 leading-tight">Turn Your Space Into<span className="block text-rose-400">Extra Income</span></h2>
+          <span className="inline-block bg-[#FF6B4A]/20 border border-[#FF6B4A]/30 text-[#FFAA99] text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">For Hosts</span>
+          <h2 className="text-4xl sm:text-5xl font-black text-white mb-5 leading-tight">Turn Your Space Into<span className="block text-[#FF8A70]">Extra Income</span></h2>
           <p className="text-gray-300 text-lg mb-8 leading-relaxed">Join over 4 million hosts on Rentora. Set your own schedule, set your price, and welcome guests from around the world — on your terms.</p>
-          <Link href="/hosting/try-hosting" className="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white font-bold px-8 py-4 rounded-2xl transition-all shadow-xl hover:shadow-rose-500/40 hover:scale-105 text-lg">
+          <Link href="/hosting/try-hosting" className="inline-flex items-center gap-2 bg-[#FF6B4A] hover:bg-[#E55A3D] text-white font-bold px-8 py-4 rounded-2xl transition-all shadow-xl hover:shadow-[#FF6B4A]/40 hover:scale-105 text-lg">
             Start Hosting Today
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </Link>
@@ -233,7 +233,7 @@ function HostCTASection() {
 /* ─── Testimonials ───────────────────────── */
 const testimonials = [
   { name: "Gerard Opao Salvador", location: "Paris, France", avatar: "GS", rating: 5, text: "Absolutely magical experience in Santorini! The villa exceeded every expectation. Rentora made the entire booking process seamless.", stay: "Santorini Cliffside Villa", color: "from-violet-500 to-purple-600" },
-  { name: "Novak Peter", location: "London, UK", avatar: "NP", rating: 5, text: "Stayed in a gorgeous ryokan in Kyoto. The host was incredibly welcoming and the property was exactly as described.", stay: "Traditional Kyoto Ryokan", color: "from-rose-500 to-pink-600" },
+  { name: "Novak Peter", location: "London, UK", avatar: "NP", rating: 5, text: "Stayed in a gorgeous ryokan in Kyoto. The host was incredibly welcoming and the property was exactly as described.", stay: "Traditional Kyoto Ryokan", color: "from-[#FF6B4A] to-[#14B8A6]" },
   { name: "Sári Zoltan", location: "Dubai, UAE", avatar: "SZ", rating: 5, text: "The Maldives overwater bungalow was a dream come true. Everything from booking to checkout was perfect.", stay: "Maldives Overwater Bungalow", color: "from-amber-500 to-orange-600" },
 ];
 
@@ -242,8 +242,8 @@ function TestimonialsSection() {
     <section id="reviews" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-rose-500 font-bold text-sm uppercase tracking-widest">Real Stories</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2 mb-4">Guests Love Rentora</h2>
+          <span className="text-[#FF6B4A] font-bold text-sm uppercase tracking-widest">Real Stories</span>
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4">Guests Love Rentora</h2>
           <div className="flex items-center justify-center gap-1 mb-2">
             {[...Array(5)].map((_, i) => <span key={i} className="text-amber-400 text-2xl">★</span>)}
           </div>
@@ -251,14 +251,14 @@ function TestimonialsSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {testimonials.map((t) => (
-            <div key={t.name} className="bg-gray-50 rounded-2xl p-7 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+            <div key={t.name} className="bg-slate-50 rounded-2xl p-7 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
               <div className="flex gap-0.5 mb-4">{[...Array(t.rating)].map((_, i) => <span key={i} className="text-amber-400 text-sm">★</span>)}</div>
               <p className="text-gray-600 text-sm leading-relaxed mb-5 italic">"{t.text}"</p>
-              <div className="inline-flex items-center gap-1.5 text-xs text-rose-600 bg-rose-50 rounded-full px-3 py-1 font-medium mb-5">🏠 {t.stay}</div>
+              <div className="inline-flex items-center gap-1.5 text-xs text-[#E55A3D] bg-[#FFF0ED] rounded-full px-3 py-1 font-medium mb-5">🏠 {t.stay}</div>
               <div className="flex items-center gap-3 border-t border-gray-200 pt-4">
                 <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${t.color} flex items-center justify-center text-white font-bold text-sm shrink-0`}>{t.avatar}</div>
                 <div>
-                  <div className="font-bold text-gray-900 text-sm">{t.name}</div>
+                  <div className="font-bold text-slate-900 text-sm">{t.name}</div>
                   <div className="text-gray-400 text-xs">{t.location}</div>
                 </div>
               </div>
@@ -281,28 +281,28 @@ function HeroSection() {
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto">
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-black text-white mb-6 leading-tight drop-shadow-lg">
           Find Your Perfect
-          <span className="block bg-gradient-to-r from-rose-400 to-pink-400 bg-clip-text text-transparent">Home Away</span>
+          <span className="block bg-gradient-to-r from-[#FF8A70] to-[#2DD4BF] bg-clip-text text-transparent">Home Away</span>
           From Home
         </h1>
         <p className="text-lg sm:text-xl text-white/80 mb-10 max-w-2xl mx-auto font-light">
           Discover unique stays, from cozy cabins to luxury villas. Book with confidence, experience the world differently.
         </p>
         <div className="bg-white rounded-2xl shadow-2xl p-2 max-w-3xl mx-auto flex flex-col sm:flex-row gap-2">
-          <div className="flex-1 flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer">
-            <svg className="w-5 h-5 text-rose-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+          <div className="flex-1 flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-50 transition-colors cursor-pointer">
+            <svg className="w-5 h-5 text-[#FF6B4A] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
             <div className="text-left"><div className="text-xs text-gray-500 font-semibold uppercase tracking-wide">Where</div><div className="text-sm text-gray-400">Search destinations</div></div>
           </div>
           <div className="hidden sm:block w-px bg-gray-200 my-3" />
-          <div className="flex-1 flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer">
-            <svg className="w-5 h-5 text-rose-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+          <div className="flex-1 flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-50 transition-colors cursor-pointer">
+            <svg className="w-5 h-5 text-[#FF6B4A] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
             <div className="text-left"><div className="text-xs text-gray-500 font-semibold uppercase tracking-wide">When</div><div className="text-sm text-gray-400">Add dates</div></div>
           </div>
           <div className="hidden sm:block w-px bg-gray-200 my-3" />
-          <div className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer">
-            <svg className="w-5 h-5 text-rose-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+          <div className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-50 transition-colors cursor-pointer">
+            <svg className="w-5 h-5 text-[#FF6B4A] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
             <div className="text-left"><div className="text-xs text-gray-500 font-semibold uppercase tracking-wide">Who</div><div className="text-sm text-gray-400">Add guests</div></div>
           </div>
-          <Link href="/" className="flex items-center justify-center gap-2 bg-rose-500 hover:bg-rose-600 text-white font-bold rounded-xl px-6 py-3 transition-all hover:shadow-lg shrink-0">
+          <Link href="/" className="flex items-center justify-center gap-2 bg-[#FF6B4A] hover:bg-[#E55A3D] text-white font-bold rounded-xl px-6 py-3 transition-all hover:shadow-lg shrink-0">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
             Search
           </Link>

@@ -39,7 +39,7 @@ const socialIcons = [
 
 export default function LandingFooter() {
     return (
-        <footer className="bg-gray-900 text-gray-400">
+        <footer className="bg-[#1E3A8A] text-gray-400">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Top link columns */}
                 <div className="py-14 grid grid-cols-2 md:grid-cols-4 gap-10 border-b border-gray-800">
@@ -94,7 +94,7 @@ export default function LandingFooter() {
                                 key={icon.label}
                                 href="#"
                                 aria-label={icon.label}
-                                className="w-8 h-8 rounded-full bg-gray-800 hover:bg-rose-500 transition-colors flex items-center justify-center"
+                                className="w-8 h-8 rounded-full bg-gray-800 hover:bg-[#FF6B4A] transition-colors flex items-center justify-center"
                             >
                                 <svg className="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
                                     <path d={icon.path} />

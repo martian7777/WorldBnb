@@ -69,18 +69,18 @@ export default function TermsPage() {
             <section className="py-16 bg-white">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Intro box */}
-                    <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 mb-10">
+                    <div className="bg-slate-50 border border-gray-100 rounded-2xl p-6 mb-10">
                         <p className="text-gray-600 text-sm leading-relaxed">
                             These Terms & Conditions ("Terms") constitute a legally binding agreement between you and Rentora, Inc. governing your use of our website, apps, and marketplace services. Rentora is a platform that connects hosts with guests — we are not a party to agreements between hosts and guests.
                         </p>
                     </div>
 
                     {/* Quick nav */}
-                    <div className="bg-rose-50 rounded-2xl p-5 mb-10 border border-rose-100">
+                    <div className="bg-[#FFF0ED] rounded-2xl p-5 mb-10 border border-rose-100">
                         <p className="text-sm font-bold text-rose-700 mb-3">Quick Navigation</p>
                         <div className="flex flex-wrap gap-2">
                             {sections.map((s) => (
-                                <a key={s.heading} href={`#${s.heading.replace(/\s+/g, "-")}`} className="text-xs bg-white border border-rose-200 text-rose-600 hover:bg-rose-500 hover:text-white transition-all px-3 py-1.5 rounded-full font-medium">
+                                <a key={s.heading} href={`#${s.heading.replace(/\s+/g, "-")}`} className="text-xs bg-white border border-rose-200 text-[#E55A3D] hover:bg-[#FF6B4A] hover:text-white transition-all px-3 py-1.5 rounded-full font-medium">
                                     {s.heading.split(". ")[1]}
                                 </a>
                             ))}
@@ -91,7 +91,7 @@ export default function TermsPage() {
                     <div className="space-y-10">
                         {sections.map((s) => (
                             <div key={s.heading} id={s.heading.replace(/\s+/g, "-")}>
-                                <h2 className="text-xl font-black text-gray-900 mb-3 pb-2 border-b border-gray-100">
+                                <h2 className="text-xl font-black text-slate-900 mb-3 pb-2 border-b border-gray-100">
                                     {s.heading}
                                 </h2>
                                 <div className="text-gray-600 text-sm leading-relaxed whitespace-pre-line">{s.body}</div>
@@ -102,12 +102,12 @@ export default function TermsPage() {
             </section>
 
             {/* Footer CTA */}
-            <section className="py-14 bg-gray-50 text-center">
+            <section className="py-14 bg-slate-50 text-center">
                 <div className="max-w-xl mx-auto px-4">
                     <p className="text-gray-500 mb-6 text-sm">
                         Questions about our terms? Our legal team is here to help.
                     </p>
-                    <Link href="/support/help-center" className="inline-block bg-gray-900 hover:bg-gray-700 text-white font-bold px-8 py-3.5 rounded-2xl transition-all hover:shadow-lg">
+                    <Link href="/support/help-center" className="inline-block bg-[#1E3A8A] hover:bg-gray-700 text-white font-bold px-8 py-3.5 rounded-2xl transition-all hover:shadow-lg">
                         Contact Legal Team
                     </Link>
                     <div className="mt-4">

@@ -63,7 +63,7 @@ export default function SignupPage() {
 
             {/* Error */}
             {error && (
-                <div className="mb-5 bg-rose-50 border border-rose-200 text-rose-700 text-sm rounded-xl px-4 py-3">
+                <div className="mb-5 bg-[#FFF0ED] border border-rose-200 text-rose-700 text-sm rounded-xl px-4 py-3">
                     {error}
                 </div>
             )}
@@ -71,31 +71,31 @@ export default function SignupPage() {
             {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">Full Name</label>
+                    <label className="block text-sm font-semibold text-slate-700 mb-1.5">Full Name</label>
                     <input
                         type="text"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Alex Johnson"
                         required
-                        className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent transition-all placeholder-gray-400"
+                        className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#FF8A70] focus:border-transparent transition-all placeholder-gray-400"
                     />
                 </div>
 
                 <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">Email</label>
+                    <label className="block text-sm font-semibold text-slate-700 mb-1.5">Email</label>
                     <input
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="you@example.com"
                         required
-                        className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent transition-all placeholder-gray-400"
+                        className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#FF8A70] focus:border-transparent transition-all placeholder-gray-400"
                     />
                 </div>
 
                 <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">Password</label>
+                    <label className="block text-sm font-semibold text-slate-700 mb-1.5">Password</label>
                     <input
                         type="password"
                         value={password}
@@ -103,12 +103,12 @@ export default function SignupPage() {
                         placeholder="Min. 6 characters"
                         required
                         minLength={6}
-                        className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent transition-all placeholder-gray-400"
+                        className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#FF8A70] focus:border-transparent transition-all placeholder-gray-400"
                     />
                 </div>
 
                 <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">Confirm Password</label>
+                    <label className="block text-sm font-semibold text-slate-700 mb-1.5">Confirm Password</label>
                     <input
                         type="password"
                         value={confirm}
@@ -117,27 +117,27 @@ export default function SignupPage() {
                         required
                         minLength={6}
                         className={`w-full border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:border-transparent transition-all placeholder-gray-400 ${confirm && confirm !== password
-                                ? "border-rose-300 focus:ring-rose-300"
-                                : "border-gray-200 focus:ring-rose-400"
+                                ? "border-[#FFAA99] focus:ring-[#FFAA99]"
+                                : "border-gray-200 focus:ring-[#FF8A70]"
                             }`}
                     />
                     {confirm && confirm !== password && (
-                        <p className="text-xs text-rose-500 mt-1">Passwords do not match</p>
+                        <p className="text-xs text-[#FF6B4A] mt-1">Passwords do not match</p>
                     )}
                 </div>
 
                 {/* Terms agreement */}
                 <p className="text-xs text-gray-400 text-center leading-relaxed">
                     By signing up you agree to our{" "}
-                    <Link href="/terms" className="text-rose-500 hover:underline">Terms</Link>
+                    <Link href="/terms" className="text-[#FF6B4A] hover:underline">Terms</Link>
                     {" "}and{" "}
-                    <Link href="/privacy" className="text-rose-500 hover:underline">Privacy Policy</Link>
+                    <Link href="/privacy" className="text-[#FF6B4A] hover:underline">Privacy Policy</Link>
                 </p>
 
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-rose-200 disabled:opacity-60 disabled:cursor-not-allowed text-sm"
+                    className="w-full bg-gradient-to-r from-[#FF6B4A] to-[#14B8A6] hover:from-[#E55A3D] hover:to-pink-700 text-white font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-rose-200 disabled:opacity-60 disabled:cursor-not-allowed text-sm"
                 >
                     {loading ? (
                         <span className="flex items-center justify-center gap-2">
@@ -150,7 +150,7 @@ export default function SignupPage() {
 
             <p className="text-center text-sm text-gray-500 mt-6">
                 Already have an account?{" "}
-                <Link href="/login" className="text-rose-500 hover:text-rose-700 font-semibold">
+                <Link href="/login" className="text-[#FF6B4A] hover:text-rose-700 font-semibold">
                     Sign in
                 </Link>
             </p>

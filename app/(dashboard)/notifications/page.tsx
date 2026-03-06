@@ -38,10 +38,10 @@ export default function NotificationsPage() {
             {/* Header row */}
             <div className="flex items-center justify-between">
                 <p className="text-sm text-gray-500">
-                    {unreadCount > 0 ? <><strong className="text-gray-900">{unreadCount}</strong> unread</> : "All caught up 🎉"}
+                    {unreadCount > 0 ? <><strong className="text-slate-900">{unreadCount}</strong> unread</> : "All caught up 🎉"}
                 </p>
                 {unreadCount > 0 && (
-                    <button onClick={markAllRead} className="text-sm font-semibold text-rose-500 hover:text-rose-700 transition-colors">
+                    <button onClick={markAllRead} className="text-sm font-semibold text-[#FF6B4A] hover:text-rose-700 transition-colors">
                         Mark all as read
                     </button>
                 )}
@@ -60,8 +60,8 @@ export default function NotificationsPage() {
                         </div>
                         <div className="flex-1 min-w-0">
                             <div className="flex items-start justify-between gap-2">
-                                <p className={`font-bold text-sm ${n.read ? "text-gray-600" : "text-gray-900"}`}>{n.title}</p>
-                                {!n.read && <span className="w-2 h-2 bg-rose-500 rounded-full shrink-0 mt-1.5" />}
+                                <p className={`font-bold text-sm ${n.read ? "text-gray-600" : "text-slate-900"}`}>{n.title}</p>
+                                {!n.read && <span className="w-2 h-2 bg-[#FF6B4A] rounded-full shrink-0 mt-1.5" />}
                             </div>
                             <p className="text-sm text-gray-500 leading-relaxed mt-1">{n.body}</p>
                             <p className="text-xs text-gray-400 mt-2">{n.time}</p>

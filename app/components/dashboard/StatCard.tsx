@@ -14,7 +14,7 @@ export default function StatCard({
     value,
     trend,
     trendUp = true,
-    accent = "bg-rose-100 text-rose-600",
+    accent = "bg-rose-100 text-[#E55A3D]",
 }: StatCardProps) {
     return (
         <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5">
@@ -31,7 +31,7 @@ export default function StatCard({
                     </span>
                 )}
             </div>
-            <div className="text-2xl font-black text-gray-900 mb-1">{value}</div>
+            <div className="text-2xl font-black text-slate-900 mb-1">{value}</div>
             <div className="text-sm text-gray-500">{label}</div>
         </div>
     );

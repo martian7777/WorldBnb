@@ -27,14 +27,14 @@ export default function GiftCardsPage() {
             />
 
             {/* Purchase UI */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-16 bg-slate-50">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                         {/* Left: Configuration */}
                         <div className="space-y-8">
                             {/* Amount */}
                             <div>
-                                <h3 className="font-black text-gray-900 text-lg mb-4">Choose Amount</h3>
+                                <h3 className="font-black text-slate-900 text-lg mb-4">Choose Amount</h3>
                                 <div className="grid grid-cols-3 gap-3">
                                     {amounts.map((a) => (
                                         <button
@@ -42,7 +42,7 @@ export default function GiftCardsPage() {
                                             onClick={() => { setSelectedAmount(a); setCustomAmount(""); }}
                                             className={`py-3 rounded-xl font-bold text-sm transition-all border-2 ${selectedAmount === a && !customAmount
                                                 ? "border-amber-500 bg-amber-50 text-amber-700"
-                                                : "border-gray-200 bg-white text-gray-700 hover:border-amber-300"
+                                                : "border-gray-200 bg-white text-slate-700 hover:border-amber-300"
                                                 }`}
                                         >
                                             ${a}
@@ -62,7 +62,7 @@ export default function GiftCardsPage() {
 
                             {/* Design */}
                             <div>
-                                <h3 className="font-black text-gray-900 text-lg mb-4">Choose Design</h3>
+                                <h3 className="font-black text-slate-900 text-lg mb-4">Choose Design</h3>
                                 <div className="grid grid-cols-2 gap-3">
                                     {designs.map((d) => (
                                         <button
@@ -72,7 +72,7 @@ export default function GiftCardsPage() {
                                                 }`}
                                         >
                                             <div className="text-3xl mb-2">{d.emoji}</div>
-                                            <div className="font-bold text-gray-900 text-sm">{d.label}</div>
+                                            <div className="font-bold text-slate-900 text-sm">{d.label}</div>
                                             <div className="text-gray-500 text-xs mt-0.5">{d.desc}</div>
                                         </button>
                                     ))}
@@ -81,7 +81,7 @@ export default function GiftCardsPage() {
 
                             {/* Recipient */}
                             <div>
-                                <h3 className="font-black text-gray-900 text-lg mb-4">Recipient Details</h3>
+                                <h3 className="font-black text-slate-900 text-lg mb-4">Recipient Details</h3>
                                 <div className="space-y-3">
                                     <input type="text" placeholder="Recipient's name" className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" />
                                     <input type="email" placeholder="Recipient's email" className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" />
@@ -106,7 +106,7 @@ export default function GiftCardsPage() {
 
                             {/* Order Summary */}
                             <div className="bg-white rounded-2xl border border-gray-200 p-6 space-y-4">
-                                <h3 className="font-bold text-gray-900">Order Summary</h3>
+                                <h3 className="font-bold text-slate-900">Order Summary</h3>
                                 <div className="flex justify-between text-sm text-gray-600">
                                     <span>Gift Card Amount</span>
                                     <span className="font-bold">${customAmount || selectedAmount}</span>
@@ -115,7 +115,7 @@ export default function GiftCardsPage() {
                                     <span>Processing Fee</span>
                                     <span className="text-green-600 font-bold">Free</span>
                                 </div>
-                                <div className="border-t pt-4 flex justify-between font-black text-gray-900">
+                                <div className="border-t pt-4 flex justify-between font-black text-slate-900">
                                     <span>Total</span>
                                     <span>${customAmount || selectedAmount}</span>
                                 </div>
@@ -132,12 +132,12 @@ export default function GiftCardsPage() {
             {/* How to redeem */}
             <section className="py-14 bg-white text-center">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-xl font-black text-gray-900 mb-8">How to Redeem</h2>
+                    <h2 className="text-xl font-black text-slate-900 mb-8">How to Redeem</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                         {[{ icon: "📧", step: "Receive", desc: "Your recipient gets an email with the gift card code instantly." }, { icon: "🏠", step: "Browse", desc: "They browse 500K+ listings and find their perfect stay." }, { icon: "✅", step: "Apply", desc: "Enter the code at checkout — balance applied automatically." }].map((s) => (
                             <div key={s.step} className="bg-amber-50 rounded-2xl p-6 border border-amber-100">
                                 <div className="text-3xl mb-3">{s.icon}</div>
-                                <div className="font-black text-gray-900 mb-1">{s.step}</div>
+                                <div className="font-black text-slate-900 mb-1">{s.step}</div>
                                 <div className="text-gray-500 text-sm">{s.desc}</div>
                             </div>
                         ))}

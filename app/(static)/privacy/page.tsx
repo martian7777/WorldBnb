@@ -55,7 +55,7 @@ export default function PrivacyPage() {
             />
 
             {/* Last Updated */}
-            <div className="bg-rose-50 border-b border-rose-100 py-3">
+            <div className="bg-[#FFF0ED] border-b border-rose-100 py-3">
                 <div className="max-w-3xl mx-auto px-4 text-center text-sm text-rose-700 font-medium">
                     Last updated: <strong>March 1, 2026</strong> · Effective immediately
                 </div>
@@ -65,7 +65,7 @@ export default function PrivacyPage() {
             <section className="py-16 bg-white">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Intro */}
-                    <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 mb-10">
+                    <div className="bg-slate-50 border border-gray-100 rounded-2xl p-6 mb-10">
                         <p className="text-gray-600 text-sm leading-relaxed">
                             This Privacy Policy applies to Rentora, Inc. and its affiliates globally. By using Rentora services — including our website, mobile apps, and related tools — you agree to the collection and use of information as described here.
                         </p>
@@ -75,7 +75,7 @@ export default function PrivacyPage() {
                     <div className="space-y-10">
                         {sections.map((s) => (
                             <div key={s.heading}>
-                                <h2 className="text-xl font-black text-gray-900 mb-3 pb-2 border-b border-gray-100">
+                                <h2 className="text-xl font-black text-slate-900 mb-3 pb-2 border-b border-gray-100">
                                     {s.heading}
                                 </h2>
                                 <div className="text-gray-600 text-sm leading-relaxed whitespace-pre-line">{s.body}</div>
@@ -86,12 +86,12 @@ export default function PrivacyPage() {
             </section>
 
             {/* Footer CTA */}
-            <section className="py-14 bg-gray-50 text-center">
+            <section className="py-14 bg-slate-50 text-center">
                 <div className="max-w-xl mx-auto px-4">
                     <p className="text-gray-500 mb-6 text-sm">
                         Have a question about your privacy? We're here to help.
                     </p>
-                    <Link href="/support/report-concern" className="inline-block bg-rose-500 hover:bg-rose-600 text-white font-bold px-8 py-3.5 rounded-2xl transition-all hover:shadow-lg">
+                    <Link href="/support/report-concern" className="inline-block bg-[#FF6B4A] hover:bg-[#E55A3D] text-white font-bold px-8 py-3.5 rounded-2xl transition-all hover:shadow-lg">
                         Contact Privacy Team
                     </Link>
                     <div className="mt-4">

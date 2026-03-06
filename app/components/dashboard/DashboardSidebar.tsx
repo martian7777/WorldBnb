@@ -28,12 +28,12 @@ export default function DashboardSidebar() {
             {/* Logo */}
             <div className="px-6 py-5 border-b border-gray-100">
                 <Link href="/" className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center shadow-sm">
+                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#FF6B4A] to-[#14B8A6] flex items-center justify-center shadow-sm">
                         <svg className="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                         </svg>
                     </div>
-                    <span className="text-lg font-black tracking-tight text-rose-500">
+                    <span className="text-lg font-black tracking-tight text-[#FF6B4A]">
                         Rentora
                     </span>
                 </Link>
@@ -41,12 +41,12 @@ export default function DashboardSidebar() {
 
             {/* User info */}
             <div className="px-4 py-4 border-b border-gray-100">
-                <div className="flex items-center gap-3 bg-rose-50 rounded-2xl px-3 py-3">
-                    <div className="w-9 h-9 rounded-full bg-gradient-to-br from-rose-400 to-pink-500 flex items-center justify-center text-white font-bold text-sm shrink-0">
+                <div className="flex items-center gap-3 bg-[#FFF0ED] rounded-2xl px-3 py-3">
+                    <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#FF8A70] to-[#14B8A6] flex items-center justify-center text-white font-bold text-sm shrink-0">
                         {user?.name?.[0]?.toUpperCase() ?? "U"}
                     </div>
                     <div className="min-w-0">
-                        <p className="font-bold text-gray-900 text-sm truncate">{user?.name ?? "Guest"}</p>
+                        <p className="font-bold text-slate-900 text-sm truncate">{user?.name ?? "Guest"}</p>
                         <p className="text-xs text-gray-500 truncate">{user?.email ?? ""}</p>
                     </div>
                 </div>
@@ -61,14 +61,14 @@ export default function DashboardSidebar() {
                             key={item.href}
                             href={item.href}
                             className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-semibold transition-all group relative ${isActive
-                                ? "bg-rose-500 text-white shadow-md shadow-rose-200"
-                                : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                                ? "bg-[#FF6B4A] text-white shadow-md shadow-rose-200"
+                                : "text-gray-600 hover:bg-slate-50 hover:text-slate-900"
                                 }`}
                         >
                             <span className="text-base">{item.icon}</span>
                             <span>{item.label}</span>
                             {item.badge && !isActive && (
-                                <span className="ml-auto bg-rose-100 text-rose-600 text-xs font-bold px-1.5 py-0.5 rounded-full">
+                                <span className="ml-auto bg-rose-100 text-[#E55A3D] text-xs font-bold px-1.5 py-0.5 rounded-full">
                                     {item.badge}
                                 </span>
                             )}
@@ -81,7 +81,7 @@ export default function DashboardSidebar() {
             <div className="px-3 py-4 border-t border-gray-100 space-y-1">
                 <Link
                     href="/"
-                    className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-semibold text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-all"
+                    className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-semibold text-gray-600 hover:bg-slate-50 hover:text-slate-900 transition-all"
                 >
                     <span className="text-base">🔍</span>
                     Browse Listings

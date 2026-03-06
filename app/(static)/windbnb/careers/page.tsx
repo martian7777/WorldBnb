@@ -58,7 +58,7 @@ export default function CareersPage() {
             <section className="py-14 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <div className="text-6xl mb-5">🌍</div>
-                    <h2 className="text-3xl font-black text-gray-900 mb-4">"We believe travel creates belonging."</h2>
+                    <h2 className="text-3xl font-black text-slate-900 mb-4">"We believe travel creates belonging."</h2>
                     <p className="text-gray-500 leading-relaxed max-w-2xl mx-auto">
                         Rentora's mission is to create a world where anyone can belong anywhere. Our 1,200+ team members across 30 countries work every day to make that a reality — through technology, community, and care.
                     </p>
@@ -74,10 +74,10 @@ export default function CareersPage() {
             </section>
 
             {/* Open Roles with working filter */}
-            <section className="py-14 bg-gray-50">
+            <section className="py-14 bg-slate-50">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
-                        <h2 className="text-2xl font-black text-gray-900">
+                        <h2 className="text-2xl font-black text-slate-900">
                             Open Positions <span className="text-gray-400 font-normal text-lg">({filtered.length})</span>
                         </h2>
                         <div className="flex gap-2 flex-wrap">
@@ -107,7 +107,7 @@ export default function CareersPage() {
                                             <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full ${deptColors[role.dept]}`}>{role.dept}</span>
                                             <span className="text-xs text-gray-400">{role.level}</span>
                                         </div>
-                                        <h3 className="font-black text-gray-900 hover:text-violet-600 transition-colors">{role.title}</h3>
+                                        <h3 className="font-black text-slate-900 hover:text-violet-600 transition-colors">{role.title}</h3>
                                         <div className="flex flex-wrap items-center gap-3 text-sm text-gray-400 mt-1">
                                             <span className="flex items-center gap-1">
                                                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
@@ -129,12 +129,12 @@ export default function CareersPage() {
             {/* Perks */}
             <section className="py-14 bg-white">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-black text-gray-900 mb-8 text-center">Why You'll Love Working Here</h2>
+                    <h2 className="text-2xl font-black text-slate-900 mb-8 text-center">Why You'll Love Working Here</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {perks.map((p) => (
                             <div key={p.title} className="bg-violet-50 rounded-2xl p-7 border border-violet-100 hover:shadow-lg transition-all hover:-translate-y-1">
                                 <div className="text-4xl mb-4">{p.icon}</div>
-                                <h3 className="font-bold text-gray-900 text-lg mb-2">{p.title}</h3>
+                                <h3 className="font-bold text-slate-900 text-lg mb-2">{p.title}</h3>
                                 <p className="text-gray-500 text-sm leading-relaxed">{p.desc}</p>
                             </div>
                         ))}

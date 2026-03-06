@@ -24,14 +24,14 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
                 <div key={index} className="bg-white">
                     <button
                         onClick={() => toggle(index)}
-                        className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors group"
+                        className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-slate-50 transition-colors group"
                         aria-expanded={openIndex === index}
                     >
-                        <span className="font-semibold text-gray-900 group-hover:text-rose-500 transition-colors pr-4">
+                        <span className="font-semibold text-slate-900 group-hover:text-[#FF6B4A] transition-colors pr-4">
                             {item.q}
                         </span>
                         <svg
-                            className={`w-5 h-5 text-gray-400 shrink-0 transition-transform duration-200 ${openIndex === index ? "rotate-180 text-rose-500" : ""
+                            className={`w-5 h-5 text-gray-400 shrink-0 transition-transform duration-200 ${openIndex === index ? "rotate-180 text-[#FF6B4A]" : ""
                                 }`}
                             fill="none"
                             stroke="currentColor"

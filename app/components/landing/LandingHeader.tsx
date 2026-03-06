@@ -38,7 +38,7 @@ export default function LandingHeader() {
                             className="w-8 h-8 rounded-full shadow-lg object-contain bg-white"
                         />
                         <span
-                            className={`text-xl font-black tracking-tight transition-colors ${scrolled ? "text-rose-500" : "text-white"
+                            className={`text-xl font-black tracking-tight transition-colors ${scrolled ? "text-[#FF6B4A]" : "text-white"
                                 }`}
                         >
                             Rentora
@@ -51,7 +51,7 @@ export default function LandingHeader() {
                             <Link
                                 key={item.label}
                                 href={item.href}
-                                className={`text-sm font-semibold transition-colors hover:text-rose-400 ${scrolled ? "text-gray-700" : "text-white/90"
+                                className={`text-sm font-semibold transition-colors hover:text-[#FF8A70] ${scrolled ? "text-slate-700" : "text-white/90"
                                     }`}
                             >
                                 {item.label}
@@ -63,14 +63,14 @@ export default function LandingHeader() {
                     <div className="hidden md:flex items-center gap-3">
                         <Link
                             href="/login"
-                            className={`text-sm font-semibold px-4 py-2 rounded-full transition-all ${scrolled ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
+                            className={`text-sm font-semibold px-4 py-2 rounded-full transition-all ${scrolled ? "text-slate-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
                                 }`}
                         >
                             Log in
                         </Link>
                         <Link
                             href="/signup"
-                            className="text-sm font-bold px-5 py-2.5 rounded-full bg-rose-500 text-white hover:bg-rose-600 transition-all shadow-lg hover:shadow-rose-500/30 hover:scale-105"
+                            className="text-sm font-bold px-5 py-2.5 rounded-full bg-[#FF6B4A] text-white hover:bg-[#E55A3D] transition-all shadow-lg hover:shadow-[#FF6B4A]/30 hover:scale-105"
                         >
                             Sign up
                         </Link>
@@ -79,7 +79,7 @@ export default function LandingHeader() {
                     {/* Hamburger */}
                     <button
                         onClick={() => setMenuOpen(!menuOpen)}
-                        className={`md:hidden p-2 rounded-lg transition-colors ${scrolled ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
+                        className={`md:hidden p-2 rounded-lg transition-colors ${scrolled ? "text-slate-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
                             }`}
                         aria-label="Toggle menu"
                     >
@@ -105,16 +105,16 @@ export default function LandingHeader() {
                                 key={item.label}
                                 href={item.href}
                                 onClick={() => setMenuOpen(false)}
-                                className="text-gray-700 font-semibold py-2 border-b border-gray-100 hover:text-rose-500 transition-colors"
+                                className="text-slate-700 font-semibold py-2 border-b border-gray-100 hover:text-[#FF6B4A] transition-colors"
                             >
                                 {item.label}
                             </Link>
                         ))}
                         <div className="flex gap-3 pt-2">
-                            <Link href="/login" className="flex-1 text-center py-2.5 rounded-full border border-gray-300 text-gray-700 font-semibold text-sm hover:bg-gray-50">
+                            <Link href="/login" className="flex-1 text-center py-2.5 rounded-full border border-gray-300 text-slate-700 font-semibold text-sm hover:bg-slate-50">
                                 Log in
                             </Link>
-                            <Link href="/signup" className="flex-1 text-center py-2.5 rounded-full bg-rose-500 text-white font-bold text-sm hover:bg-rose-600">
+                            <Link href="/signup" className="flex-1 text-center py-2.5 rounded-full bg-[#FF6B4A] text-white font-bold text-sm hover:bg-[#E55A3D]">
                                 Sign up
                             </Link>
                         </div>

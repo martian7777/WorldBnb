@@ -60,7 +60,7 @@ export default function LoginPage() {
 
             {/* Error */}
             {error && (
-                <div className="mb-5 bg-rose-50 border border-rose-200 text-rose-700 text-sm rounded-xl px-4 py-3">
+                <div className="mb-5 bg-[#FFF0ED] border border-rose-200 text-rose-700 text-sm rounded-xl px-4 py-3">
                     {error}
                 </div>
             )}
@@ -68,21 +68,21 @@ export default function LoginPage() {
             {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">Email</label>
+                    <label className="block text-sm font-semibold text-slate-700 mb-1.5">Email</label>
                     <input
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="you@example.com"
                         required
-                        className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent transition-all placeholder-gray-400"
+                        className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#FF8A70] focus:border-transparent transition-all placeholder-gray-400"
                     />
                 </div>
 
                 <div>
                     <div className="flex items-center justify-between mb-1.5">
-                        <label className="text-sm font-semibold text-gray-700">Password</label>
-                        <button type="button" className="text-xs text-rose-500 hover:text-rose-700 font-medium">Forgot password?</button>
+                        <label className="text-sm font-semibold text-slate-700">Password</label>
+                        <button type="button" className="text-xs text-[#FF6B4A] hover:text-rose-700 font-medium">Forgot password?</button>
                     </div>
                     <div className="relative">
                         <input
@@ -91,7 +91,7 @@ export default function LoginPage() {
                             onChange={(e) => setPassword(e.target.value)}
                             placeholder="••••••••"
                             required
-                            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent transition-all placeholder-gray-400 pr-11"
+                            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#FF8A70] focus:border-transparent transition-all placeholder-gray-400 pr-11"
                         />
                         <button
                             type="button"
@@ -111,7 +111,7 @@ export default function LoginPage() {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-rose-200 disabled:opacity-60 disabled:cursor-not-allowed text-sm mt-2"
+                    className="w-full bg-gradient-to-r from-[#FF6B4A] to-[#14B8A6] hover:from-[#E55A3D] hover:to-pink-700 text-white font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-rose-200 disabled:opacity-60 disabled:cursor-not-allowed text-sm mt-2"
                 >
                     {loading ? (
                         <span className="flex items-center justify-center gap-2">
@@ -124,7 +124,7 @@ export default function LoginPage() {
 
             <p className="text-center text-sm text-gray-500 mt-6">
                 Don't have an account?{" "}
-                <Link href="/signup" className="text-rose-500 hover:text-rose-700 font-semibold">
+                <Link href="/signup" className="text-[#FF6B4A] hover:text-rose-700 font-semibold">
                     Create one free
                 </Link>
             </p>

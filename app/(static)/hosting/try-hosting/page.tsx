@@ -48,15 +48,15 @@ export default function TryHostingPage() {
       </section>
 
       {/* How to Start */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-slate-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-gray-900 mb-10 text-center">Getting Started Is Simple</h2>
+          <h2 className="text-2xl font-black text-slate-900 mb-10 text-center">Getting Started Is Simple</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((s) => (
               <div key={s.step} className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 hover:shadow-lg transition-all text-center">
                 <div className="text-4xl mb-5">{s.icon}</div>
                 <div className="text-sm font-bold text-indigo-600 uppercase tracking-widest mb-2">Step {s.step}</div>
-                <h3 className="font-black text-gray-900 text-lg mb-2">{s.title}</h3>
+                <h3 className="font-black text-slate-900 text-lg mb-2">{s.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
               </div>
             ))}
@@ -67,7 +67,7 @@ export default function TryHostingPage() {
       {/* Benefits */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-black text-gray-900 mb-10 text-center">Why Host with Rentora?</h2>
+          <h2 className="text-4xl font-black text-slate-900 mb-10 text-center">Why Host with Rentora?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((b) => <InfoCard key={b.title} {...b} accent="bg-indigo-50 text-indigo-600" />)}
           </div>

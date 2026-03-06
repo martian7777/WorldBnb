@@ -12,7 +12,7 @@ export default function SocialButton({ icon, label, onClick }: SocialButtonProps
         <button
             type="button"
             onClick={onClick}
-            className="flex-1 flex items-center justify-center gap-2.5 border border-gray-200 bg-white hover:bg-gray-50 active:bg-gray-100 text-gray-700 font-semibold text-sm px-4 py-3 rounded-xl transition-all hover:shadow-sm"
+            className="flex-1 flex items-center justify-center gap-2.5 border border-gray-200 bg-white hover:bg-slate-50 active:bg-gray-100 text-slate-700 font-semibold text-sm px-4 py-3 rounded-xl transition-all hover:shadow-sm"
         >
             {icon}
             {label}

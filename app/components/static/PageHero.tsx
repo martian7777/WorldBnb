@@ -14,7 +14,7 @@ export default function PageHero({
     badge,
     title,
     subtitle,
-    gradient = "from-rose-500 to-pink-600",
+    gradient = "from-[#FF6B4A] to-[#14B8A6]",
     bgImage,
 }: PageHeroProps) {
     return (
