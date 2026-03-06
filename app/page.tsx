@@ -232,9 +232,9 @@ function HostCTASection() {
 
 /* ─── Testimonials ───────────────────────── */
 const testimonials = [
-  { name: "Sophie Laurent", location: "Paris, France", avatar: "SL", rating: 5, text: "Absolutely magical experience in Santorini! The villa exceeded every expectation. Rentora made the entire booking process seamless.", stay: "Santorini Cliffside Villa", color: "from-violet-500 to-purple-600" },
-  { name: "James Thornton", location: "London, UK", avatar: "JT", rating: 5, text: "Stayed in a gorgeous ryokan in Kyoto. The host was incredibly welcoming and the property was exactly as described.", stay: "Traditional Kyoto Ryokan", color: "from-rose-500 to-pink-600" },
-  { name: "Aisha Rahman", location: "Dubai, UAE", avatar: "AR", rating: 5, text: "The Maldives overwater bungalow was a dream come true. Everything from booking to checkout was perfect.", stay: "Maldives Overwater Bungalow", color: "from-amber-500 to-orange-600" },
+  { name: "Gerard Opao Salvador", location: "Paris, France", avatar: "GS", rating: 5, text: "Absolutely magical experience in Santorini! The villa exceeded every expectation. Rentora made the entire booking process seamless.", stay: "Santorini Cliffside Villa", color: "from-violet-500 to-purple-600" },
+  { name: "Novak Peter", location: "London, UK", avatar: "NP", rating: 5, text: "Stayed in a gorgeous ryokan in Kyoto. The host was incredibly welcoming and the property was exactly as described.", stay: "Traditional Kyoto Ryokan", color: "from-rose-500 to-pink-600" },
+  { name: "Sári Zoltan", location: "Dubai, UAE", avatar: "SZ", rating: 5, text: "The Maldives overwater bungalow was a dream come true. Everything from booking to checkout was perfect.", stay: "Maldives Overwater Bungalow", color: "from-amber-500 to-orange-600" },
 ];
 
 function TestimonialsSection() {
