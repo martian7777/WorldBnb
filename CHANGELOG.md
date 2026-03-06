@@ -40,26 +40,11 @@ We have implemented a comprehensive set of routes and UI layouts.
 - Standalone pages for **Privacy Policy (`/privacy`)** and **Terms & Conditions (`/terms`)**.
 - Includes specific pages like Help Center, Safety, Careers, Investors, Magazine, Events, and Gift Cards.
 
-## 3. Database Schema (Prisma + MongoDB)
-The data layer is fully configured using Prisma.
 
-### Data Models:
-1. **User:** Manages user credentials, authentication data (hashed passwords, email verification), profile assets, and an array of `favoriteIds` for the wishlist feature.
-2. **Account:** Manages OAuth linking (GitHub and Google) mapped to the User model via NextAuth.
-3. **Listing:** Stores property details created by hosts. Includes title, description, image source, category, room/bathroom/guest capacities, geographical location data, and pricing.
-4. **Reservation:** Tracks bookings, capturing start/end dates, total pricing, and linking the guest (User) to the booked property (Listing).
-
-## 4. Authentication & Security
-- Integrated **NextAuth.js v4**.
-- Supported Providers:
-  - **Credentials** (Email & Password)
-  - **GitHub OAuth**
-  - **Google OAuth**
-- Session data is stored securely in MongoDB via the Prisma adapter.
-
-## 5. UI Architecture & Components
+## 3. UI Architecture & Components
 Organized modular structure under `app/components/`:
 - **Auth:** `AuthCard`, `SocialButton`.
 - **Dashboard:** `Sidebar`, `DashboardHeader`, `StatCard`.
 - **Landing:** `LandingHeader`, `LandingFooter`.
 - **Static Pages:** `PageHero`, `FAQAccordion`, `InfoCard`, `ContactForm`.
+
