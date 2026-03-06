@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function LandingHeader() {
     const [scrolled, setScrolled] = useState(false);
@@ -29,11 +30,13 @@ export default function LandingHeader() {
                 <div className="flex items-center justify-between h-16 md:h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center shadow-lg">
-                            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-                            </svg>
-                        </div>
+                        <Image
+                            src="/images/rentora_black.png"
+                            alt="Rentora Icon"
+                            width={32}
+                            height={32}
+                            className="w-8 h-8 rounded-full shadow-lg object-contain bg-white"
+                        />
                         <span
                             className={`text-xl font-black tracking-tight transition-colors ${scrolled ? "text-rose-500" : "text-white"
                                 }`}
