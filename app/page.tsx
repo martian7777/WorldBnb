@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { ShieldCheck, CreditCard, MessageCircle, BadgeCheck, Zap, Sparkles } from "lucide-react";
 import LandingHeader from "@/app/components/landing/LandingHeader";
 import LandingFooter from "@/app/components/landing/LandingFooter";
 
@@ -122,12 +123,12 @@ function DestinationsSection() {
 
 /* ─── Why Rentora ────────────────────────── */
 const features = [
-  { icon: "🛡️", title: "Verified Listings", desc: "Every property is reviewed and verified by our team. What you see is exactly what you get." },
-  { icon: "🔒", title: "Secure Payments", desc: "Your payment is protected with bank-level encryption. We hold funds until 24h after check-in." },
-  { icon: "💬", title: "24/7 Support", desc: "Our dedicated support team is available around the clock to resolve any issues instantly." },
-  { icon: "💰", title: "Best Price Guarantee", desc: "Find the same property cheaper elsewhere? We'll match it — no questions asked." },
-  { icon: "⚡", title: "Instant Booking", desc: "Skip the waiting. Most properties offer instant confirmation so you can plan with confidence." },
-  { icon: "🌟", title: "Top-Rated Hosts", desc: "Our hosts are rated by real guests. Travel knowing you're staying with the best." },
+  { icon: BadgeCheck, title: "Trusted Properties", desc: "Every property is reviewed and verified by our team. What you see is exactly what you get." },
+  { icon: CreditCard, title: "Encrypted Payments", desc: "Your payment is protected with bank-level encryption. We hold funds until 24h after check-in." },
+  { icon: MessageCircle, title: "Always-On Support", desc: "Our dedicated support team is available around the clock to resolve any issues instantly." },
+  { icon: Zap, title: "Smart Pricing", desc: "Find the same property cheaper elsewhere? We'll match it — no questions asked." },
+  { icon: Sparkles, title: "AI Travel Recommendations", desc: "Our AI matches you with homes that fit your travel style, past stays, and host preferences." },
+  { icon: ShieldCheck, title: "Top-Rated Hosts", desc: "Our hosts are rated by real guests. Travel knowing you're staying with the best." },
 ];
 
 function WhySection() {
@@ -142,13 +143,18 @@ function WhySection() {
           <p className="text-gray-400 max-w-xl mx-auto">We go beyond booking. We deliver confidence, comfort, and unforgettable experiences.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((f) => (
-            <div key={f.title} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-7 hover:bg-white/10 hover:border-rose-500/30 transition-all duration-300 group hover:-translate-y-1">
-              <div className="text-4xl mb-4">{f.icon}</div>
-              <h3 className="text-white font-bold text-lg mb-2 group-hover:text-rose-300 transition-colors">{f.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{f.desc}</p>
-            </div>
-          ))}
+          {features.map((f, i) => {
+            const IconGroup = f.icon;
+            return (
+              <div key={f.title} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-7 hover:bg-white/10 hover:border-rose-500/50 hover:shadow-[0_0_30px_rgba(244,63,94,0.15)] transition-all duration-300 group hover:-translate-y-2 hover:scale-[1.02]">
+                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-5 group-hover:bg-rose-500/20 transition-colors">
+                  <IconGroup className="w-7 h-7 text-gray-400 group-hover:text-rose-400 transition-colors" />
+                </div>
+                <h3 className="text-white font-bold text-lg mb-2 group-hover:text-rose-300 transition-colors">{f.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{f.desc}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
