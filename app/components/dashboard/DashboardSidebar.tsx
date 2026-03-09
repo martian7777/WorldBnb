@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useAuth } from "@/app/context/AuthContext";
+import { useUser, useClerk } from "@clerk/nextjs";
 
 const navItems = [
     { href: "/dashboard", icon: "🏠", label: "Dashboard" },
@@ -10,17 +10,16 @@ const navItems = [
     { href: "/wishlist", icon: "❤️", label: "Wishlist" },
     { href: "/notifications", icon: "🔔", label: "Notifications", badge: 3 },
     { href: "/profile", icon: "👤", label: "Profile" },
-    { href: "/settings", icon: "⚙️", label: "Settings" },
 ];
 
 export default function DashboardSidebar() {
     const pathname = usePathname();
     const router = useRouter();
-    const { user, logout } = useAuth();
+    const { user } = useUser();
+    const { signOut } = useClerk();
 
     function handleLogout() {
-        logout();
-        router.push("/");
+        signOut(() => router.push("/"));
     }
 
     return (
@@ -43,11 +42,11 @@ export default function DashboardSidebar() {
             <div className="px-4 py-4 border-b border-gray-100">
                 <div className="flex items-center gap-3 bg-[#FFF0ED] rounded-2xl px-3 py-3">
                     <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#FF8A70] to-[#14B8A6] flex items-center justify-center text-white font-bold text-sm shrink-0">
-                        {user?.name?.[0]?.toUpperCase() ?? "U"}
+                        {user?.firstName?.[0]?.toUpperCase() ?? "U"}
                     </div>
                     <div className="min-w-0">
-                        <p className="font-bold text-slate-900 text-sm truncate">{user?.name ?? "Guest"}</p>
-                        <p className="text-xs text-gray-500 truncate">{user?.email ?? ""}</p>
+                        <p className="font-bold text-slate-900 text-sm truncate">{user?.firstName ?? "Guest"}</p>
+                        <p className="text-xs text-gray-500 truncate">{user?.primaryEmailAddress?.emailAddress ?? ""}</p>
                     </div>
                 </div>
             </div>

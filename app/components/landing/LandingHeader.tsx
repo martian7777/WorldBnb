@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
 
 export default function LandingHeader() {
     const [scrolled, setScrolled] = useState(false);
@@ -61,19 +62,34 @@ export default function LandingHeader() {
 
                     {/* CTA Buttons */}
                     <div className="hidden md:flex items-center gap-3">
-                        <Link
-                            href="/login"
-                            className={`text-sm font-semibold px-4 py-2 rounded-full transition-all ${scrolled ? "text-slate-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
-                                }`}
-                        >
-                            Log in
-                        </Link>
-                        <Link
-                            href="/signup"
-                            className="text-sm font-bold px-5 py-2.5 rounded-full bg-[#FF6B4A] text-white hover:bg-[#E55A3D] transition-all shadow-lg hover:shadow-[#FF6B4A]/30 hover:scale-105"
-                        >
-                            Sign up
-                        </Link>
+                        <Show when="signed-out">
+                            <SignInButton mode="modal">
+                                <button
+                                    className={`text-sm font-semibold px-4 py-2 rounded-full transition-all ${scrolled ? "text-slate-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
+                                        }`}
+                                >
+                                    Log in
+                                </button>
+                            </SignInButton>
+                            <SignUpButton mode="modal">
+                                <button
+                                    className="text-sm font-bold px-5 py-2.5 rounded-full bg-[#FF6B4A] text-white hover:bg-[#E55A3D] transition-all shadow-lg hover:shadow-[#FF6B4A]/30 hover:scale-105"
+                                >
+                                    Sign up
+                                </button>
+                            </SignUpButton>
+                        </Show>
+                        <Show when="signed-in">
+                            <Link
+                                href="/dashboard"
+                                className={`text-sm font-semibold px-4 py-2 rounded-full transition-all ${scrolled ? "text-slate-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
+                                    }`}
+                            >
+                                Dashboard
+                            </Link>
+
+                            <UserButton />
+                        </Show>
                     </div>
 
                     {/* Hamburger */}
@@ -111,12 +127,26 @@ export default function LandingHeader() {
                             </Link>
                         ))}
                         <div className="flex gap-3 pt-2">
-                            <Link href="/login" className="flex-1 text-center py-2.5 rounded-full border border-gray-300 text-slate-700 font-semibold text-sm hover:bg-slate-50">
-                                Log in
-                            </Link>
-                            <Link href="/signup" className="flex-1 text-center py-2.5 rounded-full bg-[#FF6B4A] text-white font-bold text-sm hover:bg-[#E55A3D]">
-                                Sign up
-                            </Link>
+                            <Show when="signed-out">
+                                <SignInButton mode="modal">
+                                    <button className="flex-1 text-center py-2.5 rounded-full border border-gray-300 text-slate-700 font-semibold text-sm hover:bg-slate-50 w-full">
+                                        Log in
+                                    </button>
+                                </SignInButton>
+                                <SignUpButton mode="modal">
+                                    <button className="flex-1 text-center py-2.5 rounded-full bg-[#FF6B4A] text-white font-bold text-sm hover:bg-[#E55A3D] w-full">
+                                        Sign up
+                                    </button>
+                                </SignUpButton>
+                            </Show>
+                            <Show when="signed-in">
+                                <Link onClick={() => setMenuOpen(false)} href="/dashboard" className="flex-1 text-center py-2.5 rounded-full border border-gray-300 text-slate-700 font-semibold text-sm hover:bg-slate-50 w-full">
+                                    Dashboard
+                                </Link>
+                                <div className="flex justify-center items-center p-2">
+                                    <UserButton />
+                                </div>
+                            </Show>
                         </div>
                     </div>
                 </div>

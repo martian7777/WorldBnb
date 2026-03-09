@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useAuth } from "@/app/context/AuthContext";
+import { useUser } from "@clerk/nextjs";
 import StatCard from "@/app/components/dashboard/StatCard";
 
 const stats = [
@@ -24,14 +24,14 @@ const recentActivity = [
 ];
 
 export default function DashboardPage() {
-    const { user } = useAuth();
+    const { user } = useUser();
 
     return (
         <div className="space-y-8">
             {/* Welcome */}
             <div className="bg-gradient-to-r from-[#FF6B4A] to-[#14B8A6] rounded-3xl p-8 text-white">
                 <p className="text-rose-200 text-sm font-semibold mb-1">Welcome back</p>
-                <h2 className="text-3xl font-black mb-2">Hey, {user?.name?.split(" ")[0] ?? "Traveller"} 👋</h2>
+                <h2 className="text-3xl font-black mb-2">Hey, {user?.firstName ?? "Traveller"} 👋</h2>
                 <p className="text-rose-100 text-sm max-w-sm">
                     You have <strong>2 upcoming trips</strong> and <strong>3 unread notifications</strong>. What would you like to do today?
                 </p>

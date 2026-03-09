@@ -1,24 +1,31 @@
 "use client";
 
-import { useState } from "react";
-import { useAuth } from "@/app/context/AuthContext";
+import { useState, useEffect } from "react";
+import { useUser } from "@clerk/nextjs";
 
 export default function ProfilePage() {
-    const { user, updateUser } = useAuth();
+    const { user, isLoaded } = useUser();
 
-    const [name, setName] = useState(user?.name ?? "");
-    const [email] = useState(user?.email ?? "");
-    const [bio, setBio] = useState(user?.bio ?? "");
-    const [location, setLocation] = useState(user?.location ?? "");
-    const [phone, setPhone] = useState(user?.phone ?? "");
+    const [name, setName] = useState(user?.firstName ?? "");
+    const [email, setEmail] = useState("");
+    const [bio, setBio] = useState("");
+    const [location, setLocation] = useState("");
+    const [phone, setPhone] = useState("");
     const [saved, setSaved] = useState(false);
     const [saving, setSaving] = useState(false);
+
+    useEffect(() => {
+        if (isLoaded && user) {
+            setName(user.firstName ?? "");
+            setEmail(user.primaryEmailAddress?.emailAddress ?? "");
+        }
+    }, [isLoaded, user]);
 
     async function handleSave(e: React.FormEvent) {
         e.preventDefault();
         setSaving(true);
         await new Promise((r) => setTimeout(r, 700));
-        updateUser({ name, bio, location, phone });
+        // updateUser({ name, bio, location, phone });
         setSaving(false);
         setSaved(true);
         setTimeout(() => setSaved(false), 3000);
@@ -33,7 +40,7 @@ export default function ProfilePage() {
                 </div>
                 <h2 className="text-xl font-black text-slate-900">{name || "Your Name"}</h2>
                 <p className="text-sm text-gray-400">{email}</p>
-                <p className="text-xs text-gray-400 mt-1">Member since {user?.joinedAt ?? "2026"}</p>
+                <p className="text-xs text-gray-400 mt-1">Member since {user?.createdAt ? new Date(user.createdAt).getFullYear() : "2026"}</p>
                 <button className="mt-4 text-sm font-semibold bg-gray-100 hover:bg-gray-200 text-slate-700 px-5 py-2 rounded-xl transition-all">
                     📷 Change Photo
                 </button>

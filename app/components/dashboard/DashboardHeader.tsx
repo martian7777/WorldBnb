@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useAuth } from "@/app/context/AuthContext";
+import { UserButton } from "@clerk/nextjs";
 
 const PAGE_TITLES: Record<string, string> = {
     "/dashboard": "Dashboard",
@@ -10,12 +10,10 @@ const PAGE_TITLES: Record<string, string> = {
     "/wishlist": "Wishlist",
     "/notifications": "Notifications",
     "/profile": "My Profile",
-    "/settings": "Settings",
 };
 
 export default function DashboardHeader() {
     const pathname = usePathname();
-    const { user } = useAuth();
     const title = PAGE_TITLES[pathname ?? ""] ?? "Dashboard";
 
     return (
@@ -47,12 +45,7 @@ export default function DashboardHeader() {
                 </Link>
 
                 {/* Avatar with link to profile */}
-                <Link href="/profile" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                    <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#FF8A70] to-[#14B8A6] flex items-center justify-center text-white font-bold text-sm shadow-sm">
-                        {user?.name?.[0]?.toUpperCase() ?? "U"}
-                    </div>
-                    <span className="hidden sm:block text-sm font-semibold text-slate-700">{user?.name?.split(" ")[0] ?? "User"}</span>
-                </Link>
+                <UserButton />
             </div>
         </header>
     );
