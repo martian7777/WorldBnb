@@ -20,20 +20,24 @@ export async function POST(req: Request) {
         }
 
         // 0. Ensure user profile exists in Supabase (Sync from Clerk)
+        const profileData = {
+            clerk_user_id: userId,
+            email: user.emailAddresses[0].emailAddress,
+            full_name: `${user.firstName || ""} ${user.lastName || ""}`.trim() || user.username || "Guest",
+            avatar_url: user.imageUrl,
+            updated_at: new Date().toISOString()
+        };
+
+        console.log("[CREATE_CHECKOUT] Syncing profile for user:", userId);
         const { error: profileError } = await supabaseAdmin
             .from("profiles")
-            .upsert({
-                clerk_user_id: userId,
-                email: user.emailAddresses[0].emailAddress,
-                full_name: `${user.firstName || ""} ${user.lastName || ""}`.trim() || user.username || "Guest",
-                avatar_url: user.imageUrl,
-                updated_at: new Date().toISOString()
-            }, { onConflict: 'clerk_user_id' });
+            .upsert(profileData, { onConflict: 'clerk_user_id' });
 
         if (profileError) {
             console.error("[PROFILE_SYNC_ERROR]", profileError);
-            // We don't block the whole flow if sync fails, but the next step (booking) might fail due to FK
+            return new NextResponse(`Profile Sync Error: ${profileError.message}`, { status: 500 });
         }
+        console.log("[CREATE_CHECKOUT] Profile synced successfully");
 
         // 1. Fetch listing details for Stripe line items
         const { data: listing } = await supabaseAdmin

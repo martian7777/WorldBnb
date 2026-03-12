@@ -4,11 +4,11 @@ import { supabaseAdmin } from "@/app/libs/supabase";
 
 export async function DELETE(
     req: Request,
-    { params }: { params: { listingId: string } }
+    { params }: { params: Promise<{ listingId: string }> }
 ) {
     try {
         const { userId } = await auth();
-        const { listingId } = params;
+        const { listingId } = await params;
 
         if (!userId) {
             return new NextResponse("Unauthorized", { status: 401 });

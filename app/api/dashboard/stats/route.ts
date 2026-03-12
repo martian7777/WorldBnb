@@ -36,7 +36,7 @@ export async function GET() {
             .eq("clerk_user_id", userId)
             .in("status", ["upcoming", "completed"]);
 
-        const totalSpent = spentData?.reduce((acc, b) => acc + Number(b.total_price), 0) || 0;
+        const totalSpent = spentData?.reduce((acc: number, b: { total_price: any }) => acc + Number(b.total_price), 0) || 0;
 
         return NextResponse.json({
             totalTrips: totalTrips || 0,

@@ -4,7 +4,7 @@ import { supabaseAdmin } from "@/app/libs/supabase";
 
 export async function PATCH(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
         const { userId } = await auth();
@@ -12,7 +12,7 @@ export async function PATCH(
             return new NextResponse("Unauthorized", { status: 401 });
         }
 
-        const { id } = params;
+        const { id } = await params;
 
         const { error } = await supabaseAdmin
             .from("notifications")
