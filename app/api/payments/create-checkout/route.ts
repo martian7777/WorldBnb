@@ -101,8 +101,8 @@ export async function POST(req: Request) {
             .eq("id", booking.id);
 
         return NextResponse.json({ url: session.url });
-    } catch (error) {
-        console.error("[CREATE_CHECKOUT]", error);
-        return new NextResponse("Internal Error", { status: 500 });
+    } catch (error: any) {
+        console.error("[CREATE_CHECKOUT] Full Error:", error);
+        return new NextResponse(error?.message || "Internal Error", { status: 500 });
     }
 }

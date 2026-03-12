@@ -171,44 +171,6 @@ const sampleListings = [
   { title: "Overwater Bungalow", location: "South Malé Atoll, Maldives", price: 580, rating: 5.0, reviews: 47, img: "/images/maldives.png", tags: ["Private Beach", "Snorkeling", "Sunset View"] },
 ];
 
-function ListingsShowcase() {
-  return (
-    <section className="py-20 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12 gap-4">
-          <div>
-            <span className="text-[#FF6B4A] font-bold text-sm uppercase tracking-widest">Trending Now</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Guests Are Loving These</h2>
-          </div>
-          <Link href="/" className="text-[#FF6B4A] font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
-            Browse all listings <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-          </Link>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
-          {sampleListings.map((l) => (
-            <Link href="/" key={l.title} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
-              <div className="relative h-56">
-                <Image src={l.img} alt={l.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1 text-sm font-bold text-slate-800">★ {l.rating}</div>
-              </div>
-              <div className="p-5">
-                <div className="flex flex-wrap gap-1 mb-3">
-                  {l.tags.map((t) => <span key={t} className="text-xs bg-[#FFF0ED] text-[#E55A3D] font-medium px-2.5 py-0.5 rounded-full">{t}</span>)}
-                </div>
-                <h3 className="font-bold text-slate-900 text-lg mb-1 group-hover:text-[#FF6B4A] transition-colors">{l.title}</h3>
-                <p className="text-gray-500 text-sm mb-4">{l.location}</p>
-                <div className="flex items-center justify-between border-t pt-4">
-                  <div><span className="text-xl font-black text-slate-900">${l.price}</span><span className="text-gray-400 text-sm"> / night</span></div>
-                  <span className="text-gray-400 text-xs">{l.reviews} reviews</span>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 /* ─── Host CTA ───────────────────────────── */
 function HostCTASection() {
@@ -351,32 +313,6 @@ export default function LandingPage() {
       <DestinationsSection />
       <WhySection />
       
-      {/* Real Listings Showcase */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12 gap-4">
-            <div>
-              <span className="text-[#FF6B4A] font-bold text-sm uppercase tracking-widest">Available Stays</span>
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Find Your Next Adventure</h2>
-            </div>
-            <Link href="/" className="text-[#FF6B4A] font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
-              Browse all listings <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </Link>
-          </div>
-          
-          {listings.length === 0 ? (
-            <div className="text-center py-20">
-              <p className="text-gray-400">Loading amazing stays for you...</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
-              {listings.map((l) => (
-                <ListingCard key={l.id} data={l} onAction={handleBook} />
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
 
       <HostCTASection />
       <TestimonialsSection />
