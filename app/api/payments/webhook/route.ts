@@ -4,12 +4,15 @@ import stripe from "@/app/libs/stripe";
 import { supabaseAdmin } from "@/app/libs/supabase";
 
 export async function POST(req: Request) {
-    const body = await req.text();
+    const arrayBuffer = await req.arrayBuffer();
+    const bodyBuffer = Buffer.from(arrayBuffer);
+    const bodyString = bodyBuffer.toString("utf-8");
     const headersList = await headers();
     const signature = headersList.get("Stripe-Signature") as string;
 
     console.log("[WEBHOOK] Received stripe-signature:", signature ? "present" : "missing");
-    console.log("[WEBHOOK] Body length:", body.length);
+    console.log("[WEBHOOK] Body length (bytes):", bodyBuffer.length);
+    console.log("[WEBHOOK] Body length (string):", bodyString.length);
     
     // Masked secret for debugging
     const secret = process.env.STRIPE_WEBHOOK_SECRET || "";
@@ -26,7 +29,7 @@ export async function POST(req: Request) {
 
     try {
         event = stripe.webhooks.constructEvent(
-            body,
+            bodyBuffer,
             signature,
             secret
         );
