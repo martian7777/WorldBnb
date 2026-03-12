@@ -1,16 +1,47 @@
 # Changelog
 
 **Project Name:** Rentora  
-**Last Updated:** March 6, 2026
+**Last Updated:** March 12, 2026
 
-This document outlines all features, pages, schemas, and design elements implemented in the **Rentora** platform from the start up to the current date.
+This document outlines all features, pages, schemas, and design elements implemented in the **Rentora** platform.
 
 ---
 
-## 1. Project Overview & Identity
+## [MAJOR UPDATE] March 12, 2026
+
+### 🔄 Architectural Pivot: Clerk + Supabase
+- **Shifted Authentication**: Migrated from NextAuth to **Clerk** for enterprise-grade authentication, social logins, and account management.
+- **Shifted Database**: Migrated from MongoDB/Prisma to **Supabase (PostgreSQL)**. 
+- **User Sync System**: Implemented a robust synchronization system that ensures Clerk users are automatically mirrored in the Supabase `profiles` table upon first interaction.
+- **Middleware Protection**: Enhanced route protection using `clerkMiddleware`, with specific exemptions for public webhooks.
+
+### 💳 Stripe Payments Integration
+- **Direct Checkout**: Implemented direct Stripe Checkout integration for listings.
+- **Dynamic Pricing**: Real-time total calculation including service fees and cleaning fees.
+- **Webhook System**: 
+  - Created a robust webhook handler with signature verification.
+  - Implemented **10-minute timestamp tolerance** to accommodate Vercel/Stripe processing delays.
+  - Auto-updating booking status to `upcoming` upon successful payment.
+- **Admin Notifications**: Automated user notifications upon payment confirmation.
+
+### 💖 Wishlist & Favorites System
+- **Heart Button**: Re-implemented the iconic heart button for saving listings.
+- **useFavorite Hook**: Created a reusable hook for managing favorites via the API.
+- **Wishlist REST API**: Integrated Supabase-backed API for persistent saves.
+- **Unified UI**: Refactored the Wishlist page to use standard listing components for a professional look.
+
+### 🎨 Image "Smart Resolver" & UI Polish
+- **Dynamic Extension Handling**: Automatically maps database `.jpg` references to local `.png` assets.
+- **Robust Path Resolution**: Handles nested paths and flattens them for local public assets.
+- **Keyword Fallbacks**: Intelligent `onError` handlers that try city-based images (e.g., Paris, Bali) before falling back to high-quality Unsplash placeholders.
+- **Premium Dashboard**: Finalized the dashboard stats, recent activity feed, and upcoming trips section with a modern glassmorphism aesthetic.
+
+---
+
+## 1. Project Overview & Identity (Legacy Info)
 - **Name:** Rentora (formerly my-windbnb)
 - **Concept:** A full-stack short-term rental marketplace (Airbnb clone).
-- **Core Tech Stack:** Next.js 14 (App Router), TypeScript, Tailwind CSS, NextAuth.js v4, Prisma ORM, MongoDB Atlas.
+- **Core Tech Stack (Updated):** Next.js 14, Clerk Auth, Supabase (PostgreSQL), Stripe, Tailwind CSS.
 - **Design & Branding:**
   - Integrated professional icons using **Lucide React**.
   - Interactive UI polish: hover animations, card glows, and icon background circles.

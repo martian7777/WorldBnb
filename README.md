@@ -1,6 +1,6 @@
 # Rentora 🌍
 
-> **Find your perfect home away from home.** Rentora is a full-stack short-term rental marketplace built with Next.js 14, Prisma, NextAuth, and Tailwind CSS — inspired by Airbnb.
+> **Find your perfect home away from home.** Rentora is a full-stack short-term rental marketplace built with Next.js 14, Supabase (PostgreSQL), Clerk, and Tailwind CSS — inspired by Airbnb.
 
 ---
 
@@ -10,12 +10,13 @@
 |---|---|
 | 🏠 **Landing Page** | Animated hero, destination cards, stats, testimonials, and host CTA |
 | 🔍 **Search & Filter** | Filter listings by location, dates, guests, price, and category |
-| 🔐 **Authentication** | Email/password + GitHub + Google OAuth via NextAuth |
-| 📋 **18 Static Pages** | Help Center, Safety, Careers, Investors, Magazine, Events, Gift Cards, Privacy, Terms |
-| 🎛 **User Dashboard** | Post-login hub with bookings, wishlist, notifications, profile, and settings |
-| 🏡 **Host Tools** | Create/manage listings with photos, pricing, availability, and amenities |
-| ⭐ **Reviews** | Guest reviews with star ratings |
-| 🗺️ **Map Search** | Leaflet-based interactive map view |
+| 🔐 **Authentication** | Enterprise-grade auth via **Clerk** (Social + Email) |
+| 💳 **Direct Booking** | Seamless checkout experience powered by **Stripe** |
+| 💖 **Wishlist** | Save and manage your favorite stays with a real-time sync |
+| 🎛 **User Dashboard** | Post-login hub with bookings, wishlist, notifications, and stats |
+| 🏡 **Host Tools** | Create/manage listings with photos, pricing, and availability |
+| ⭐ **Reviews** | Guest reviews with star ratings and history |
+| 🎨 **Smart Images** | Automated resolve for DB paths to local assets with keyword fallbacks |
 
 ---
 
@@ -24,12 +25,11 @@
 | Layer | Technology |
 |---|---|
 | **Framework** | [Next.js 14](https://nextjs.org) — App Router |
-| **Language** | TypeScript |
+| **Authentication** | [Clerk](https://clerk.com) — Social + Email Auth |
+| **Database** | [Supabase](https://supabase.com) — PostgreSQL + Realtime |
+| **Payments** | [Stripe](https://stripe.com) — Checkout + Webhooks |
 | **Styling** | [Tailwind CSS](https://tailwindcss.com) |
-| **Auth** | [NextAuth.js v4](https://next-auth.js.org) — GitHub, Google, Credentials |
-| **Database** | [MongoDB Atlas](https://mongodb.com/atlas) via [Prisma ORM](https://prisma.io) |
-| **Image CDN** | [Cloudinary](https://cloudinary.com) |
-| **Maps** | [Leaflet](https://leafletjs.com) + `react-leaflet` |
+| **Language** | TypeScript |
 | **Deployment** | [Vercel](https://vercel.com) |
 
 ---
@@ -38,13 +38,13 @@
 
 ### Prerequisites
 
-- Node.js ≥ 18 · npm ≥ 9 · MongoDB Atlas cluster · GitHub & Google OAuth apps · Cloudinary account
+- Node.js ≥ 18 · npm ≥ 9 · Supabase Project · Clerk Account · Stripe Account
 
 ### 1. Clone & install
 
 ```bash
-git clone https://github.com/your-username/my-windbnb.git
-cd my-windbnb
+git clone https://github.com/orbimatrix/Airbnb-.git
+cd Airbnb-
 npm install
 ```
 
@@ -53,26 +53,24 @@ npm install
 Create a `.env` file in the project root:
 
 ```env
-DATABASE_URL="mongodb+srv://<user>:<password>@<cluster>.mongodb.net/rentora"
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+CLERK_SECRET_KEY=sk_test_...
 
-NEXTAUTH_SECRET="your-secret-here"
-NEXTAUTH_URL="http://localhost:3000"
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=ey...
+SUPABASE_SERVICE_ROLE_KEY=ey...
 
-GITHUB_ID="your-github-client-id"
-GITHUB_SECRET="your-github-client-secret"
-
-GOOGLE_CLIENT_ID="your-google-client-id"
-GOOGLE_CLIENT_SECRET="your-google-client-secret"
-
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your-cloud-name"
+# Stripe
+STRIPE_SECRET_KEY=sk_test_...
+STRIPE_WEBHOOK_SECRET=whsec_...
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
 ```
 
 ### 3. Database setup
 
-```bash
-npx prisma generate
-npx prisma db push
-```
+Apply the schema provided in `supabase/schema.sql` directly in the Supabase SQL Editor.
 
 ### 4. Run dev server
 
@@ -88,75 +86,23 @@ npm run dev
 ```
 my-windbnb/
 ├── app/
-│   ├── (auth)/                 # Login & Signup pages
-│   │   ├── layout.tsx
-│   │   ├── login/page.tsx
-│   │   └── signup/page.tsx
-│   ├── (dashboard)/            # Post-login user dashboard
-│   │   ├── layout.tsx          # Sidebar + topbar shell
-│   │   ├── dashboard/page.tsx  # Overview + stats
-│   │   ├── bookings/page.tsx
-│   │   ├── wishlist/page.tsx
-│   │   ├── notifications/page.tsx
-│   │   ├── profile/page.tsx
-│   │   └── settings/page.tsx
-│   ├── (static)/               # 18 static/legal pages
-│   │   ├── layout.tsx
-│   │   ├── support/  community/  hosting/  windbnb/
-│   │   ├── privacy/  terms/
-│   ├── home/                   # Main listings app
-│   ├── components/
-│   │   ├── auth/               # AuthCard, SocialButton
-│   │   ├── dashboard/          # Sidebar, Header, StatCard
-│   │   ├── landing/            # LandingHeader, LandingFooter
-│   │   └── static/             # PageHero, FAQAccordion, InfoCard, ContactForm
-│   ├── context/
-│   │   └── AuthContext.tsx     # Auth state management
-│   ├── actions/                # Server actions
-│   └── api/                    # NextAuth API routes
-├── prisma/schema.prisma
-├── public/images/
+│   ├── (dashboard)/            # Post-login user dashboard (Bookings, Wishlist, etc.)
+│   ├── (static)/               # Legal & support pages
+│   ├── api/                    # API routes (Payments, Webhooks, Notifications)
+│   ├── components/             # Reusable UI components
+│   ├── hooks/                  # Custom React hooks (useFavorite)
+│   ├── libs/                   # Utility libraries (Stripe, Supabase clients)
+│   └── layout.tsx              # Root layout with ClerkProvider
+├── public/images/              # Local asset storage
+├── supabase/                   # SQL schemas and DB configs
 └── README.md
 ```
 
 ---
 
-## 🗺️ All Routes
+## 🔐 Authentication & Data Sync
 
-| Route | Description |
-|---|---|
-| `/` | Landing page |
-| `/login` | Sign in |
-| `/signup` | Create account |
-| `/home` | Browse listings |
-| `/dashboard` | Dashboard overview |
-| `/bookings` | My bookings |
-| `/wishlist` | Saved listings |
-| `/notifications` | Notifications |
-| `/profile` | Edit profile |
-| `/settings` | Account settings |
-| `/support/*` | 4 support pages |
-| `/community/*` | 4 community pages |
-| `/hosting/*` | 4 hosting pages |
-| `/windbnb/*` | 4 company pages |
-| `/privacy` | Privacy Policy |
-| `/terms` | Terms & Conditions |
-
----
-
-## 🔐 Authentication
-
-Three providers via **NextAuth.js**: Email/Password · GitHub OAuth · Google OAuth
-
-Sessions stored in MongoDB via Prisma adapter.
-
----
-
-## 📦 Deploy to Vercel
-
-1. Push to GitHub → Import at [vercel.com/new](https://vercel.com/new)
-2. Add all `.env` variables in Vercel project settings
-3. Deploy 🚀
+Rentora uses **Clerk** for authentication. We implement a middleware-based sync that ensures every Clerk user has a corresponding row in our Supabase `profiles` table, allowing for complex relational queries while maintaining auth simplicity.
 
 ---
 
