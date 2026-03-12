@@ -31,7 +31,8 @@ export async function POST(req: Request) {
         event = stripe.webhooks.constructEvent(
             bodyBuffer,
             signature,
-            secret
+            secret,
+            600 // Increase tolerance to 10 minutes to accommodate Vercel/Stripe delay
         );
         console.log("[WEBHOOK] Event constructed successfully:", event.type);
     } catch (error: any) {
