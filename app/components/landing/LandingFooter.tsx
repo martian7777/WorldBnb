@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 
 const footerLinks = {
@@ -6,10 +6,6 @@ const footerLinks = {
         { label: "Help Center", href: "/support/help-center" },
         { label: "Safety Info", href: "/support/safety-info" },
         { label: "Cancellation Options", href: "/support/cancellation-options" },
-    ],
-    Community: [
-        { label: "Invite Friends", href: "/community/invite-friends" },
-        { label: "Gift Cards", href: "/community/gift-cards" },
     ],
     Hosting: [
         { label: "Try Hosting", href: "/hosting/try-hosting" },
