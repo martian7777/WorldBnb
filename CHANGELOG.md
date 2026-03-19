@@ -7,6 +7,22 @@ This document outlines all features, pages, schemas, and design elements impleme
 
 ---
 
+## [MAJOR UPDATE] March 20, 2026
+
+### 🏠 Property Listing & Management
+- **Rent Out Property:** Added a streamlined `/create-listing` flow enabling users to list their own properties for either Rent or Sale.
+- **My Properties Dashboard:** Created a dedicated `/my-properties` management page where hosts can view their active listings.
+- **Ownership Verification:** Injected host identification into the Supabase schema seamlessly to track listing ownership.
+- **Booking Restrictions:** Built-in safeguards preventing hosts from mistakenly booking or purchasing their own properties.
+
+### 🔍 Advanced Search & Navigation
+- **Dynamic Hero Search:** Upgraded the landing page search bar to fully process Location, Dates, and Guest counts.
+- **Availability Filtering:** Search engine now cross-references the `bookings` table to accurately hide properties that are already booked for the requested dates.
+- **Auth-Protected Actions:** Simplified user flows by automatically redirecting unauthenticated booking/searching attempts through Clerk login, returning them safely to the dashboard.
+- **UI Clean-up:** Temporarily hidden listing thumbnail images platform-wide and simplified the Hero section by removing the Rent/Buy toggle.
+
+---
+
 ## [MAJOR UPDATE] March 12, 2026
 
 ### 🔄 Architectural Pivot: Clerk + Supabase
